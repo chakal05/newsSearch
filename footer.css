@@ -1,0 +1,100 @@
+footer {
+    width: 100%;
+   background-color: #016A3A;
+   color: #fff;
+   margin-top: 7%;
+   height: 220px;
+}
+
+.blanc{
+    color: #fff;
+    font-size: 17px;
+    padding-top: 3%;
+}
+
+ li{
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+ ul{
+    list-style: none;
+    margin-bottom: -40px;
+}
+
+ a{
+    color: #fff;
+}
+
+ a:hover{
+color: #fff;
+}
+
+ .firstList{
+     width: 40%;
+     float: left;
+     margin-left: 3%;
+     margin-right: 3%;
+     margin-top: 1%;
+     height: 190px;
+}
+
+
+.far{
+    margin-right: 3%;
+}
+
+
+/* Smaller devices (320px ---- iphone5*/
+@media (max-width: 320px) { 
+footer{
+    width: 100%;
+    height:auto;
+    padding: 3%;
+}
+
+ ul{
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.firstList{
+    width: 100%;
+    margin-left: 0;
+    margin: 0 auto;
+    float: none;
+}
+
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) { 
+ 
+}
+
+
+
+/* Large devices (ipad, 768px and up) */
+@media (min-width: 768px) { 
+
+footer{
+    height: 200px;
+}
+
+ 
+li {
+    font-size: 15px;
+}
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    .blanc{
+        padding: 0;
+    }
+
+    .firstList, .secondList{
+        padding-top: 1%;
+    }
+}
