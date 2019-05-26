@@ -1,29 +1,19 @@
 $(document ).ready( function() {
+
     $(".alert").fadeOut(5000 , "linear");
-    // To slide something leftwards into view,
-    // with a delay of 1000 msec
-//    $("div").click(function () {
-//        $(this).show("slide", { direction: "left" }, 1000);
-//  });
    checkAdhere();
    checkSoutien();
    checkForNews();
 
-
 });
 
 
-
-
-
-
-function checkAdhere(){
+    function checkAdhere(){
 
     function isEmail(email){
         var regex=/^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
         return regex.test(email);
-        
-        }   
+    }   
 
     $("#one").submit(function(e){
         
@@ -32,16 +22,14 @@ function checkAdhere(){
    
   
     if($("#inputEmail").val() != "" && isEmail($("#inputEmail").val()) === false){
-
         errorMessage += "<p>Votre email n'est pas valide</p>";
-
     } 
     
     if($("#inputEmail").val() === ""){
          missingFields += "<br>Il vous manque un email";
-     } 
+    } 
      
-     if($("#inputNom").val() === ""){
+    if($("#inputNom").val() === ""){
         missingFields += "<br>Vous devez entrer un nom";
     }
        
@@ -61,30 +49,24 @@ function checkAdhere(){
         missingFields += "<br>Vous devez entrer un pays";
     }
    
-
-
     if(missingFields !== ""){
         errorMessage+= " Les espaces suivants sont manquants :" + missingFields;
-   }
+    }
 
    if(errorMessage !== ""){
        $("#errorMessage").html('<div class="alert alert-danger" role="alert">' + errorMessage + '</div>');
        e.preventDefault();
-   }
-       
+    }
 
-})
+    })
+    }
 
-}
-
-
-function checkSoutien(){
+    function checkSoutien(){
     
-    function isEmail(email){
+     function isEmail(email){
         var regex=/^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
         return regex.test(email);
-        
-        }   
+    }   
 
     $("#deux").submit(function(e){
         
@@ -93,9 +75,7 @@ function checkSoutien(){
    
   
     if($("#inputEmail1").val() != "" && isEmail($("#inputEmail1").val()) === false){
-
         errorMess += "<p>Votre email n'est pas valide</p>";
-
     } 
     
     if($("#inputEmail1").val() === ""){
@@ -117,27 +97,25 @@ function checkSoutien(){
 
     if(missingField !== ""){
         errorMess+= " Les espaces suivants sont manquants :" + missingField;
-   }
+    }
 
-   if(errorMess !== ""){
+    if(errorMess !== ""){
        $("#errorMess").html('<div class="alert alert-danger" role="alert">' + errorMess + '</div>');
        e.preventDefault();
-   }
+    }
        
 
-})
+    })
 
-}
+    }
 
-
-
-function checkForNews(){
+    function checkForNews(){
     
     function isEmail(email){
         var regex=/^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
         return regex.test(email);
         
-        }   
+    }   
 
     $("#trois").submit(function(e){
         
@@ -167,9 +145,9 @@ function checkForNews(){
    if(errorMedd !== ""){
        $("#errorMedd").html('<div class="alert alert-danger" role="alert">' + errorMedd + '</div>');
        e.preventDefault();
-   }
+    }
        
 
-})
+    })
 
-}
+    }
