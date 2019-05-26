@@ -45,14 +45,13 @@ if (array_key_exists('adherer', $_POST)){
         Il a eu un probleme, réesayez svp
       </div>";
         }
+    
+  }
 
-      
-}
+        if (array_key_exists('soutenir', $_POST)){
+       if(isset($_POST['name']) && isset($_POST['firstName']) && isset($_POST['mail']) && isset($_POST['message']) ){
 
-if (array_key_exists('soutenir', $_POST)){
-    if(isset($_POST['name']) && isset($_POST['firstName']) && isset($_POST['mail']) && isset($_POST['message']) ){
-
-      if( $_POST['name'] !== '' && $_POST['firstName'] !== '' && $_POST['mail']  !== '' && $_POST['message']  !== '' ){
+        if( $_POST['name'] !== '' && $_POST['firstName'] !== '' && $_POST['mail']  !== '' && $_POST['message']  !== '' ){
         $namn =mysqli_real_escape_string( $link, $_POST['name']);
         $stad = mysqli_real_escape_string( $link, $_POST['firstName']);
         $land =  mysqli_real_escape_string( $link, $_POST['mail']);
@@ -82,20 +81,20 @@ if (array_key_exists('soutenir', $_POST)){
     
 }
 
-$quer = mysqli_query($link, "SELECT * FROM `adhesion` ORDER BY id DESC LIMIT 1;");
-if(mysqli_num_rows($quer)){
+  $quer = mysqli_query($link, "SELECT * FROM `adhesion` ORDER BY id DESC LIMIT 1;");
+  if(mysqli_num_rows($quer)){
 
-while($m = mysqli_fetch_array($quer)){
- $name = base64_decode($m['gender']);
- 
-//echo($name);
-}
-}
+  while($m = mysqli_fetch_array($quer)){
+   $name = base64_decode($m['gender']);
+  
+  //echo($name);
+  }
+  }
 
 ?>
 
 
-<?php  echo "
+  <?php  echo "
         <nav class='navbar navbar-expand-lg navbar-dark'>
         <a class='navbar-brand' href='index.php'>
         <img src='images/Logo.png' width='60' height='60' />
@@ -400,10 +399,10 @@ while($m = mysqli_fetch_array($quer)){
         </nav>
 
 
-";    
+  ";    
 
-echo $success;
+  echo $success;
 
 
-?>
+  ?>
 

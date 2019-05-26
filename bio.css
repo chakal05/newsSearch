@@ -1,70 +1,71 @@
-img{
-    width: 100%;
+    img{
+        width: 100%;
+    
+    }
+    
+    .jumbotron{
+        height: 200px;
+        background: url(images/iog1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center 17% ;
+    }
+    
+    h3{
+        color: rgb(2, 59, 33);
+        margin-top: -7%;
+        margin-bottom: 3%;
+    }
+    
+    .mitten{
+        display: none;
+    }
+    
+    .bio{
+        padding: 3%;
+        margin-bottom: -5%;
+    }
 
-}
+    .bio h4{
+        color: rgb(16, 17, 17);
+        padding: 2%;
+        margin-top: -7%;
+        font-family: 'Cutive Mono', monospace;
+    }
 
-.jumbotron{
-    height: 200px;
-    background: url(images/iog1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center 17% ;
-}
+    hr{
+        width: 88%;
+        margin-left: 11%;
+        margin-top: -2%;
+    }
+    .bio p{
+        padding: 3%;
+        color: rgb(14, 24, 14);
+    }
 
-h3{
-    color: rgb(2, 59, 33);
-    margin-top: -7%;
-    margin-bottom: 3%;
-}
-
-.mitten{
-    display: none;
-}
-.bio{
-    padding: 3%;
-    margin-bottom: -5%;
-}
-
-.bio h4{
-    color: rgb(16, 17, 17);
-    padding: 2%;
-    margin-top: -7%;
-    font-family: 'Cutive Mono', monospace;
-}
-
-hr{
-    width: 88%;
-    margin-left: 11%;
-    margin-top: -2%;
-}
-.bio p{
-    padding: 3%;
-    color: rgb(14, 24, 14);
-}
-
-.firstList{
-    margin-top: 4%;
-    margin-right: 7%;
-    margin-left: -3%;
-}
+    .firstList{
+        margin-top: 4%;
+        margin-right: 7%;
+        margin-left: -3%;
+    }
 
 @media (max-width: 320px) {
 
-.firstList{
-    margin-left: -7%;
-}
+    .firstList{
+        margin-left: -7%;
+    }
 
-.secondList{
-    margin-left: -11%;
-}
+    .secondList{
+        margin-left: -11%;
+    }
 
-}
+    }
 
 @media (min-width: 576px) {
     .jumbotron{
         height: 270px;
     }
- }
+    }
 
 @media (min-width: 768px) {
     .jumbotron{
@@ -91,10 +92,6 @@ hr{
         margin-top: -2%;
     }
 
-    .first p{
-        
-    }
-
     .first h4{
         width: 40%;
       height: 500px;
@@ -110,6 +107,7 @@ hr{
     .deux{
         margin-top: 5%;
     }
+
     .deux h4{
         width: 40%;
         border: 1px solid;
@@ -135,7 +133,7 @@ hr{
     .firstList{
         margin-top: 2.7%;
     }
- }
+    }
  
 @media (min-width: 992px) {
     .jumbotron{
@@ -158,22 +156,24 @@ hr{
    .first h4{
        margin-top: 1%;
    }
-   footer{
+
+    footer{
     margin-top: 7%;
     height: 215px;
+
     }
 
-
-.firstList{
-    margin-top: 1.7%;
-    margin-left: 3%;
+    .firstList{
+        margin-top: 1.7%;
+        margin-left: 3%;
     }
 
-.secondList{
-    padding-top: 5%;
-}
+    .secondList{
+        padding-top: 5%;
+    }
 
-.secondList h3{
-    margin-bottom: 1%;
-}
- }
+    .secondList h3{
+        margin-bottom: 1%;
+    }
+
+     }

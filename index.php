@@ -66,10 +66,10 @@ crossorigin="anonymous"
       <?php echo $success;  ?>
     <header><?php include('header.php');  ?></header>
    
-<div class="box">
+    <div class="box">
 
     <div class="bd-example">
-  <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+   <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
       <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
@@ -91,17 +91,17 @@ crossorigin="anonymous"
     <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="sr-only">Next</span>
-    </a>
-  </div>
-  </div>
-</div>
+      </a>
+    </div>
+    </div>
+    </div>
 
-<div class="checked">
-  <h3>Notre politique s'impose à Djibouti </h3> <br>
-<p><i class="fas fa-check"></i> LE RPP s'engage pour la  fin de la faim a Djibouti.</p>
-<p><i class="fas fa-check"></i> Nous voulons un dévelopement généralise dans toutes les régions djiboutiennes.</p>
-<p><i class="fas fa-check"></i> Nous poursuivons une croissance économique constante.</p>
-</div>
+  <div class="checked">
+    <h3>Notre politique s'impose à Djibouti </h3> <br>
+  <p><i class="fas fa-check"></i> LE RPP s'engage pour la  fin de la faim a Djibouti.</p>
+  <p><i class="fas fa-check"></i> Nous voulons un dévelopement généralise dans toutes les régions djiboutiennes.</p>
+  <p><i class="fas fa-check"></i> Nous poursuivons une croissance économique constante.</p>
+  </div>
 
     <div class="cercle">
 
@@ -132,10 +132,11 @@ crossorigin="anonymous"
     <div class="status">
     <h3>Les Annexes</h3>
     <br />
+
     <p>Les Annexes sont les instances de base du Parti. Elles constituent les lieux de rencontre des forces vives du RPP et le laboratoire d’idées, de réflexions et d’analyses politiques au sein desquels s’expriment et s’épanouissent les militants.
-Le parti s’appuie et utilise ses Annexes pour entreprendre ses activités et actions politiques.
-Les Annexes tirent leur force de la population au sein de laquelle elles recrutent leurs futurs militants par les actions de sensibilisation et de mobilisation qu’elles mènent constamment en son sein.
-Les Annexes abritent les rencontres des militants et/ou des militants avec la population des quartiers, des villes ou des villages aux fins d’information, d’échanges d’idées et de sensibilisation. Dans ces lieux, les militants définissent les différents objectifs à réaliser.</p>
+  Le parti s’appuie et utilise ses Annexes pour entreprendre ses activités et actions politiques.
+  Les Annexes tirent leur force de la population au sein de laquelle elles recrutent leurs futurs militants par les actions de sensibilisation et de mobilisation qu’elles mènent constamment en son sein.
+  Les Annexes abritent les rencontres des militants et/ou des militants avec la population des quartiers, des villes ou des villages aux fins d’information, d’échanges d’idées et de sensibilisation. Dans ces lieux, les militants définissent les différents objectifs à réaliser.</p>
     <br />
      <a href="missions.php">Lire plus</a> 
     </div>

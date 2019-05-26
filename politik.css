@@ -36,9 +36,9 @@ html, body{
 }
 
 .content p{
-padding: 3%;
-font-size: 15px;
-color: rgb(14, 24, 14);
+    padding: 3%;
+    font-size: 15px;
+    color: rgb(14, 24, 14);
 }
 
 .accordion{
@@ -56,10 +56,10 @@ color: rgb(14, 24, 14);
 }
 
 .card .fa-angle-down{
- position: absolute;
- right:3%;
- top: 1.9rem;
- color: #fff;
+    position: absolute;
+    right:3%;
+    top: 1.9rem;
+    color: #fff;
 }
 
 
@@ -94,16 +94,16 @@ color: rgb(14, 24, 14);
 /*Smaller screens --320px-- iphone5*/
 @media (max-width: 320px) {
 
-    .firstList{
-        margin-left: -7%;
-        margin-bottom: 5%;
-    }
+.firstList{
+    margin-left: -7%;
+    margin-bottom: 5%;
+}
     
-    .secondList{
-        margin-left: -11%;
-    }
+.secondList{
+    margin-left: -11%;
+}
     
-    }
+}
 
 /* Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) { 
@@ -126,73 +126,74 @@ footer i{
 
 @media (min-width: 768px) { 
 
-    .jumbotron{
-        height: 300px;
-    }
+.jumbotron{
+    height: 300px;
+}
 
-    .content{
-        border: none;
-        margin-bottom: 3%;
-    }
+.content{
+    border: none;
+    margin-bottom: 3%;
+}
 
-    .content h3{
-        width: 40%;
-        float: left;
-        padding-top: 9%;
-        font-size: 23px;
-        margin-right: 3%;
-        background-color: #016A3A;
-        color: #fff;
-        height: 180px;
-        margin-top: 1%;
-        border-radius: 3px;
-        margin-left: 3%;
-        text-align: center;
-    }
+.content h3{
+    width: 40%;
+    float: left;
+    padding-top: 9%;
+    font-size: 23px;
+    margin-right: 3%;
+    background-color: #016A3A;
+    color: #fff;
+    height: 180px;
+    margin-top: 1%;
+    border-radius: 3px;
+    margin-left: 3%;
+    text-align: center;
+}
 
-    .content p{
-        margin-top: -2%;
-    }
+.content p{
+    margin-top: -2%;
+}
 
-    .card .fa-angle-down{
-        right:3%;
-        top: 1.7rem;
-       }
+.card .fa-angle-down{
+    right:3%;
+    top: 1.7rem;
+}
 
-       footer{
-           height: 210px;
-       }
+footer{
+    height: 210px;
+}
 
 }
 
 @media (min-width: 992px) { 
-    .jumbotron .container{
-        top: -5.5rem;
-        left: 11rem;
-        padding: 5%;
-    }
+.jumbotron .container{
+    top: -5.5rem;
+    left: 11rem;
+    padding: 5%;
+}
 
-    .content{
-        padding: 1%;
-        margin-top: 2%;
-       margin-bottom: 2%;
-    }
+.content{
+    padding: 1%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
 
-    .content h3{
-        margin-top: 1%;
-        height: 220px;
-        padding-top: 5%;
-    }
+    
+.content h3{
+    margin-top: 1%;
+    height: 220px;
+    padding-top: 5%;
+}
 
-    .content p{
-        margin-top: .3%;
-    }
+.content p{
+    margin-top: .3%;
+}
 
-    .firstList{
-     margin-top: -0.1%;     
-    }
+.firstList{
+    margin-top: -0.1%;     
+}
 
-    footer{
-        height: 200px;
-    }
+footer{
+    height: 200px;
+}
 }

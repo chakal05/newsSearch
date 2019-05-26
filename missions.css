@@ -1,10 +1,10 @@
 .jumbotron{
-    height: 170px;
+  height: 170px;
   background: url('images/pic2.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-    border-radius: 0;
+  border-radius: 0;
 }
 
 .content{
@@ -30,7 +30,6 @@
 }
 
 @media (max-width: 320px) {
-
     .firstList{
         margin-left: -7%;
     }
@@ -53,8 +52,8 @@
     }
 
     .content h2{
-        text-align: center;
-        width: 40%;
+      text-align: center;
+      width: 40%;
       height: 500px;
       float: left;
       margin-right: 2%;

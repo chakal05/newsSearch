@@ -46,39 +46,40 @@ liées aux évolutions possibles de développement à long terme du pays.
   
   </div>
 
-<div class="accordion" id="accordionExample">
+  <div class="accordion" id="accordionExample">
   <div class="card">
-    <div class="card-header" id="headingOne">
-      <h2 class="mb-0">
-        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-        Paix et Unité nationale
-        <i class="fas fa-angle-down"></i>
-        </button>
-      </h2>
+  <div class="card-header" id="headingOne">
+  <h2 class="mb-0">
+  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+  Paix et Unité nationale
+  <i class="fas fa-angle-down"></i>
+  </button>
+  </h2>
       
-    </div>
+  </div>
 
-    <div id="collapseOne" class="collapse " aria-labelledby="headingOne" data-parent="#accordionExample">
-      <div class="card-body">
-      
-<!-- Button trigger modal -->
-<a  href="#" class="" data-toggle="modal" data-target="#exampleModalScrollable1">
-<i class="fas fa-angle-right"></i>  Promouvoir une justice sociale, une équité et des capacités de l’Etat mais aussi une culture
-de paix
-</a>
-<!-- Modal -->
-<div class="modal fade" id="exampleModalScrollable1" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle1" aria-hidden="true">
+  <div id="collapseOne" class="collapse " aria-labelledby="headingOne" data-parent="#accordionExample">
+  <div class="card-body">
+
+  <!-- Button trigger modal -->
+  <a  href="#" class="" data-toggle="modal" data-target="#exampleModalScrollable1">
+  <i class="fas fa-angle-right"></i>  Promouvoir une justice sociale, une équité et des capacités de l’Etat mais aussi une culture
+  de paix
+  </a>
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalScrollable1" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle1" aria-hidden="true">
   <div class="modal-dialog modal-dialog-scrollable" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalScrollableTitle1">Promouvoir une justice sociale, une équité et des capacités de l’Etat mais aussi une culture
-de paix</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-      La vision Djibouti 2035, stratégie de développement à long terme, est fondamentalement
+  <div class="modal-content">
+  <div class="modal-header">
+  <h5 class="modal-title" id="exampleModalScrollableTitle1">Promouvoir une justice sociale, une équité et des capacités de l’Etat mais aussi une culture
+  de paix</h5>
+  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+  <span aria-hidden="true">&times;</span>
+  </button>
+  </div>
+  <div class="modal-body">
+
+La vision Djibouti 2035, stratégie de développement à long terme, est fondamentalement
 dépendante du maintien de la paix et de la sécurité du pays. Une paix durable se construit sur
 une justice sociale, une équité et un Etat de droit. En effet, une absence de justice sociale et
 d’équité, voire une incapacité de l’Etat à assurer une égalité de chances dans le développement
@@ -101,34 +102,37 @@ des populations.<br>
 Les institutions et les pratiques traditionnelles ont montré leur pertinence et leur efficacité dans
 le maintien de la paix sociale. Elles devront être intégrées dans le dispositif institutionnel du
 pays.
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
-    </div>
+
+
   </div>
-</div>
+  <div class="modal-footer">
+  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+  </div>
+  </div>
+  </div>
+  </div>
 
-<br>
+  <br>
 
-<!-- Button trigger modal -->
-<a  href="#" class="" data-toggle="modal" data-target="#exampleModalScrollable2">
+  <!-- Button trigger modal -->
+  <a  href="#" class="" data-toggle="modal" data-target="#exampleModalScrollable2">
 
-<i class="fas fa-angle-right"></i> Promouvoir une identité culturelle et une conscience nationale
-</a>
+  <i class="fas fa-angle-right"></i> Promouvoir une identité culturelle et une conscience nationale
+  </a>
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModalScrollable2" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle2" aria-hidden="true">
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalScrollable2" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle2" aria-hidden="true">
   <div class="modal-dialog modal-dialog-scrollable" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalScrollableTitle2">Promouvoir une identité culturelle et une conscience nationale</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-      Par identité culturelle, il faut entendre une capacité à diffuser les dimensions culturelles du
+  <div class="modal-content">
+  <div class="modal-header">
+  <h5 class="modal-title" id="exampleModalScrollableTitle2">Promouvoir une identité culturelle et une conscience nationale</h5>
+  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+  <span aria-hidden="true">&times;</span>
+  </button>
+  </div>
+  <div class="modal-body">
+
+Par identité culturelle, il faut entendre une capacité à diffuser les dimensions culturelles du
 développement dans tous ses traits essentiels et distinctifs notamment spirituels, matériels et
 intellectuels. L’identité culturelle, dénominateur commun de la nation djiboutienne, contribuera
 à l’éducation humaine et civique des citoyens et influencera les attitudes, les comportements
@@ -159,37 +163,40 @@ l’éducation et aux valeurs civique, morale, physique et sportive pour influer
 des djiboutiens et djiboutiennes et sur leurs attitudes civiques liées au patriotisme, à l’unité
 nationale et à la paix, de même que sur leurs attitudes économiques et sociales à travers le
 renforcement de l’initiative privée et de l’entreprenariat.
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
-    </div>
+
+
   </div>
-</div>
+  <div class="modal-footer">
+  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+  </div>
+  </div>
+  </div>
+  </div>
 
 
 
-<br>
+  <br>
 
-<!-- Button trigger modal -->
-<a  href="#" class="" data-toggle="modal" data-target="#exampleModalScrollable3">
-<i class="fas fa-angle-right"></i> Promouvoir une politique de défense globale, garantissant la sécurité des personnes et des
-biens
-</a>
+  <!-- Button trigger modal -->
+  <a  href="#" class="" data-toggle="modal" data-target="#exampleModalScrollable3">
+  <i class="fas fa-angle-right"></i> Promouvoir une politique de défense globale, garantissant la sécurité des personnes et des
+  biens
+  </a>
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModalScrollable3" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle3" aria-hidden="true">
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalScrollable3" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle3" aria-hidden="true">
   <div class="modal-dialog modal-dialog-scrollable" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalScrollableTitle3">Promouvoir une politique de défense globale, garantissant la sécurité des personnes et des
-biens</h5>
-<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-      La défense d’un pays n’est jamais acquise une fois pour toutes. Les mutations mondiales affectant
+  <div class="modal-content">
+  <div class="modal-header">
+  <h5 class="modal-title" id="exampleModalScrollableTitle3">Promouvoir une politique de défense globale, garantissant la sécurité des personnes et des
+  biens</h5>
+  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+  <span aria-hidden="true">&times;</span>
+  </button>
+  </div>
+  <div class="modal-body">
+
+La défense d’un pays n’est jamais acquise une fois pour toutes. Les mutations mondiales affectant
 la défense ne se limitent pas aux seuls aspects militaires et stratégiques.<br>
 Ces évolutions appellent aujourd’hui et encore davantage demain, une conception globale de
 la défense, associant à la défense militaire une dimension civile et une dimension économique.
@@ -209,48 +216,52 @@ fonctionnement efficace des éléments de défense et de sécurité pour rassure
 toutes les composantes socioculturelles du pays. Ces éléments de défense et de sécurité
 professionnels et performants seront ainsi des instruments complémentaires à la disposition des
 pouvoirs publics pour le maintien de cette paix sociale.
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
-    </div>
+
+
   </div>
-</div>
+  <div class="modal-footer">
+  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+  </div>
+  </div>
+  </div>
+  </div>
 
 
-      </div>
-    </div>
+  </div>
+  </div>
   </div>
   <div class="card">
-    <div class="card-header" id="headingTwo">
-      <h2 class="mb-0">
-        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-        Bonne gouvernance 
-        <i class="fas fa-angle-down"></i>
-        </button>
-      </h2>
-      
-    </div>
-    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-      <div class="card-body">
-      
-<!-- Button trigger modal -->
-<a  href="#" class="" data-toggle="modal" data-target="#exampleModalScrollable4">
-<i class="fas fa-angle-right"></i> Des institutions fortes 
-</a>
+  <div class="card-header" id="headingTwo">
+  <h2 class="mb-0">
+  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+  Bonne gouvernance 
+  <i class="fas fa-angle-down"></i>
+  </button>
+  </h2>
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModalScrollable4" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle4" aria-hidden="true">
+  </div>
+  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+  <div class="card-body">
+
+  <!-- Button trigger modal -->
+  <a  href="#" class="" data-toggle="modal" data-target="#exampleModalScrollable4">
+  <i class="fas fa-angle-right"></i> Des institutions fortes 
+  </a>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalScrollable4" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle4" aria-hidden="true">
   <div class="modal-dialog modal-dialog-scrollable" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalScrollableTitle4"> Des institutions fortes </h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-      La conduite de la vision Djibouti 2035 aura besoin, dans les différents domaines politiques,
+  <div class="modal-content">
+  <div class="modal-header">
+  <h5 class="modal-title" id="exampleModalScrollableTitle4"> Des institutions fortes </h5>
+  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+  <span aria-hidden="true">&times;</span>
+  </button>
+  </div>
+  <div class="modal-body">
+
+
+La conduite de la vision Djibouti 2035 aura besoin, dans les différents domaines politiques,
 des institutions fortes, de djiboutiens et djiboutiennes dont le choix passe par l’organisation
 régulière des élections démocratiques qui permettront l’accession aux affaires d’un leadership
 légitimé par les urnes.<br>
@@ -263,34 +274,37 @@ Le renforcement des compétences de la haute administration publique et la forma
 meilleur leadership revêtent une importance toute particulière. Dans les années à venir,
 l’Institut National de l’Administration Publique sera au cœur des actions de reconstruction de
 l’administration publique.
- </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
-    </div>
+
   </div>
-</div>
-<br>
+  <div class="modal-footer">
+  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+  </div>
+  </div>
+  </div>
+  </div>
+  <br>
 
-<!-- Button trigger modal -->
-<a  href="#" class="" data-toggle="modal" data-target="#exampleModalScrollable5">
-<i class="fas fa-angle-right"></i> Une Démocratie renforcée, fondée sur la bonne gouvernance comme une norme
-sociale
-</a>
+  <!-- Button trigger modal -->
+  <a  href="#" class="" data-toggle="modal" data-target="#exampleModalScrollable5">
+  <i class="fas fa-angle-right"></i> Une Démocratie renforcée, fondée sur la bonne gouvernance comme une norme
+  sociale
+  </a>
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModalScrollable5" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle5" aria-hidden="true">
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalScrollable5" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle5" aria-hidden="true">
   <div class="modal-dialog modal-dialog-scrollable" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalScrollableTitle5">Une Démocratie renforcée, fondée sur la bonne gouvernance comme une norme
-sociale</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-      Les expériences de développement vécues à travers l’espace et le temps révèlent que la
+  <div class="modal-content">
+  <div class="modal-header">
+  <h5 class="modal-title" id="exampleModalScrollableTitle5">Une Démocratie renforcée, fondée sur la bonne gouvernance comme une norme
+  sociale</h5>
+  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+  <span aria-hidden="true">&times;</span>
+  </button>
+  </div>
+  <div class="modal-body">
+
+
+Les expériences de développement vécues à travers l’espace et le temps révèlent que la
 construction de nations modernes, de tradition démocratique avancée est une œuvre de longue
 haleine. Les nations qui ont le mieux réussi dans le processus du reste jamais achevé de la
 démocratisation sont celles qui ont franchi rapidement le palier de l’édification de la bonne
@@ -343,32 +357,34 @@ réalisation de la performance.<br>
 Au niveau du Parlement, les procès-verbaux des débats devront être disponibles et accessibles
 aux citoyens. Les questions orales au Gouvernement contribueront à une information complète
 des citoyens sur les activités de la représentation nationale.
- </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
-    </div>
+
   </div>
-</div>
-<br>
+  <div class="modal-footer">
+  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+  </div>
+  </div>
+  </div>
+  </div>
+  <br>
 
-<!-- Button trigger modal -->
-<a  href="#" class="" data-toggle="modal" data-target="#exampleModalScrollable6">
-<i class="fas fa-angle-right"></i> Investir dans la modernisation du système judiciaire
-</a>
+  <!-- Button trigger modal -->
+  <a  href="#" class="" data-toggle="modal" data-target="#exampleModalScrollable6">
+  <i class="fas fa-angle-right"></i> Investir dans la modernisation du système judiciaire
+  </a>
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModalScrollable6" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle6" aria-hidden="true">
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalScrollable6" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle6" aria-hidden="true">
   <div class="modal-dialog modal-dialog-scrollable" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalScrollableTitle6">Investir dans la modernisation du système judiciaire</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-      Il s’agira de poursuivre la mise en œuvre des recommandations formulées lors des Etats généraux
+  <div class="modal-content">
+  <div class="modal-header">
+  <h5 class="modal-title" id="exampleModalScrollableTitle6">Investir dans la modernisation du système judiciaire</h5>
+  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+  <span aria-hidden="true">&times;</span>
+  </button>
+  </div>
+  <div class="modal-body">
+
+Il s’agira de poursuivre la mise en œuvre des recommandations formulées lors des Etats généraux
 de la justice en 2000 avec une volonté politique et de moyens de plus en plus accrus. A cet égard,
 une grande réforme du secteur de la justice visera à renforcer les infrastructures et les capacités
 d’accueil du système judicaire, à moderniser les textes encadrant la procédure judiciaire, à
@@ -382,32 +398,34 @@ Pour accompagner l’amélioration du climat des affaires, le tribunal de commer
 d’arbitrage seront mis en place. A l’horizon 2035, le territoire national sera entièrement couvert
 par l’existence d’infrastructures judiciaires, pour répondre au double défi démographique (1
 magistrat pour 7000 habitants) et d’accompagnement des pôles régionaux de développement. 
- </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
-    </div>
+
   </div>
-</div>
-<br>
+  <div class="modal-footer">
+  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+  </div>
+  </div>
+  </div>
+  </div>
+  <br>
 
-<!-- Button trigger modal -->
-<a  href="#" class="" data-toggle="modal" data-target="#exampleModalScrollable7">
-<i class="fas fa-angle-right"></i> Renforcer les capacités de l’administration et l’E-gouvernement
-</a>
+  <!-- Button trigger modal -->
+  <a  href="#" class="" data-toggle="modal" data-target="#exampleModalScrollable7">
+  <i class="fas fa-angle-right"></i> Renforcer les capacités de l’administration et l’E-gouvernement
+  </a>
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModalScrollable7" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle7" aria-hidden="true">
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalScrollable7" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle7" aria-hidden="true">
   <div class="modal-dialog modal-dialog-scrollable" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalScrollableTitle7">Renforcer les capacités de l’administration et l’E-gouvernement</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-      Une économie moderne a besoin de l’intelligence collective, de travail en réseau et de
+  <div class="modal-content">
+  <div class="modal-header">
+  <h5 class="modal-title" id="exampleModalScrollableTitle7">Renforcer les capacités de l’administration et l’E-gouvernement</h5>
+  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+  <span aria-hidden="true">&times;</span>
+  </button>
+  </div>
+  <div class="modal-body">
+
+Une économie moderne a besoin de l’intelligence collective, de travail en réseau et de
 coordination, ce qui requiert une administration publique performante, souple, efficace et un
 cadre juridique clair et stable.<br>
 Cette économie nécessite la transformation en profondeur de l’administration. Elle est appelée à
@@ -464,32 +482,34 @@ Dans la promotion d’un Etat de droit, la justice prendra un rôle majeur. Elle
 d’importantes transformations afin qu’elle soit un instrument de développement et garante
 de la paix sociale. La justice assurera la protection du citoyen et garantira les efforts de
 l’investisseur.
- </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
-    </div>
+
   </div>
-</div>
-<br>
+  <div class="modal-footer">
+  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+  </div>
+  </div>
+  </div>
+  </div>
+  <br>
 
-<!-- Button trigger modal -->
-<a  href="#" class="" data-toggle="modal" data-target="#exampleModalScrollable8">
-<i class="fas fa-angle-right"></i> Participation citoyenne et renforcement de la société civile
-</a>
+  <!-- Button trigger modal -->
+  <a  href="#" class="" data-toggle="modal" data-target="#exampleModalScrollable8">
+  <i class="fas fa-angle-right"></i> Participation citoyenne et renforcement de la société civile
+  </a>
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModalScrollable8" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle8" aria-hidden="true">
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalScrollable8" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle8" aria-hidden="true">
   <div class="modal-dialog modal-dialog-scrollable" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalScrollableTitle8">Participation citoyenne et renforcement de la société civile</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-      Dans ce domaine, les actions viseront à l’édification d’une société civile forte et à la
+  <div class="modal-content">
+  <div class="modal-header">
+  <h5 class="modal-title" id="exampleModalScrollableTitle8">Participation citoyenne et renforcement de la société civile</h5>
+  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+  <span aria-hidden="true">&times;</span>
+  </button>
+  </div>
+  <div class="modal-body">
+
+Dans ce domaine, les actions viseront à l’édification d’une société civile forte et à la
 reconnaissance des minorités.<br>
 La société civile prendra une place importante dans le renforcement de l’État de droit. Elle
 réalisera, à travers diverses associations, des actions de sensibilisation qui permettront au citoyen
@@ -509,32 +529,34 @@ des populations et du gouvernement permettra de renforcer leur rôle de surveill
 de transparence et de redevabilité tant au niveau interne qu’en ce qui concerne l’Etat dans sa
 gestion des affaires publiques. En effet, une Société civile responsable est un acteur important
 de développement.
- </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
-    </div>
+
   </div>
-</div>
-<br>
+  <div class="modal-footer">
+  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+  </div>
+  </div>
+  </div>
+  </div>
+  <br>
 
-<!-- Button trigger modal -->
-<a  href="#" class="" data-toggle="modal" data-target="#exampleModalScrollable9">
-<i class="fas fa-angle-right"></i> Des medias, instruments de la bonne gouvernance
-</a>
+  <!-- Button trigger modal -->
+  <a  href="#" class="" data-toggle="modal" data-target="#exampleModalScrollable9">
+  <i class="fas fa-angle-right"></i> Des medias, instruments de la bonne gouvernance
+  </a>
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModalScrollable9" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle9" aria-hidden="true">
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalScrollable9" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle9" aria-hidden="true">
   <div class="modal-dialog modal-dialog-scrollable" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalScrollableTitle9">Des medias, instruments de la bonne gouvernance</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-      Les medias participent au renforcement de la transparence et de l’accès équitable à l’information.
+  <div class="modal-content">
+  <div class="modal-header">
+  <h5 class="modal-title" id="exampleModalScrollableTitle9">Des medias, instruments de la bonne gouvernance</h5>
+  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+  </div>
+  <div class="modal-body">
+
+Les medias participent au renforcement de la transparence et de l’accès équitable à l’information.
 En effet, les medias contribuent à informer le public dans les différents secteurs de la vie
 nationale, de la bonne gouvernance dans la justice, des élections plurielles et la gestion des
 ressources publiques. Sur un autre plan, les medias permettent au citoyen de suivre la mise
@@ -553,32 +575,33 @@ rôle pour devenir un agent de développement et de promotion de civisme. Sans u
 réellement libre, il ne peut y avoir de véritable démocratie et développement. L’Etat renforcera
 le cadre d’assistance au développement des médias qui sont un vecteur majeur à « la promotion
 de la libre circulation des idées par les mots, les images et le son».
- </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
-    </div>
   </div>
-</div>
-<br>
+  <div class="modal-footer">
+  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+  </div>
+  </div>
+  </div>
+  </div>
+  <br>
 
-<!-- Button trigger modal -->
-<a  href="#" class="" data-toggle="modal" data-target="#exampleModalScrollable10">
-<i class="fas fa-angle-right"></i> Consolidation de l’environnement des affaires et renforcement de l’initiative privée 
-</a>
+  <!-- Button trigger modal -->
+  <a  href="#" class="" data-toggle="modal" data-target="#exampleModalScrollable10">
+  <i class="fas fa-angle-right"></i> Consolidation de l’environnement des affaires et renforcement de l’initiative privée 
+  </a>
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModalScrollable10" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle10" aria-hidden="true">
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalScrollable10" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle10" aria-hidden="true">
   <div class="modal-dialog modal-dialog-scrollable" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalScrollableTitle10">Consolidation de l’environnement des affaires et renforcement de l’initiative privée </h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-      Le Gouvernement veillera à améliorer la qualité de l’environnement des affaires à travers deux
+  <div class="modal-content">
+  <div class="modal-header">
+  <h5 class="modal-title" id="exampleModalScrollableTitle10">Consolidation de l’environnement des affaires et renforcement de l’initiative privée </h5>
+  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+  <span aria-hidden="true">&times;</span>
+  </button>
+  </div>
+  <div class="modal-body">
+
+Le Gouvernement veillera à améliorer la qualité de l’environnement des affaires à travers deux
 actions fondamentales:<br>
 • Garantir la sécurité juridique des investisseurs, le fonctionnement de la justice permettra
 d’assurer cette fonction primordiale de protéger les investisseurs contre les risques
@@ -598,32 +621,34 @@ d’entreprise;<br>
 opérateurs économiques;<br>
 • la non-ingérence de l’Etat dans la création des sociétés privées:<br>
 • l’élimination des barrières empêchant la création de sociétés étrangères.
- </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
-    </div>
+
   </div>
-</div>
-<br>
+  <div class="modal-footer">
+  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+  </div>
+  </div>
+  </div>
+  </div>
+  <br>
 
-<!-- Button trigger modal -->
-<a  href="#" class="" data-toggle="modal" data-target="#exampleModalScrollable11">
-<i class="fas fa-angle-right"></i> Mécanismes de prévention et de répression de la corruption
-</a>
+  <!-- Button trigger modal -->
+  <a  href="#" class="" data-toggle="modal" data-target="#exampleModalScrollable11">
+  <i class="fas fa-angle-right"></i> Mécanismes de prévention et de répression de la corruption
+  </a>
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModalScrollable11" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle11" aria-hidden="true">
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalScrollable11" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle11" aria-hidden="true">
   <div class="modal-dialog modal-dialog-scrollable" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalScrollableTitle11">Mécanismes de prévention et de répression de la corruption</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-      La corruption est sans doute un fléau qui annihile lourdement les efforts de développement des
+  <div class="modal-content">
+  <div class="modal-header">
+  <h5 class="modal-title" id="exampleModalScrollableTitle11">Mécanismes de prévention et de répression de la corruption</h5>
+  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+  <span aria-hidden="true">&times;</span>
+  </button>
+  </div>
+  <div class="modal-body">
+
+La corruption est sans doute un fléau qui annihile lourdement les efforts de développement des
 pays en construction. L’Etat veillera à la moralisation de la gestion des ressources publiques par
 la mise en place des mécanismes nationaux de prévention et répression de la corruption, et
 soutiendra les actions des associations de la société civile opérant dans ce domaine.
@@ -631,52 +656,54 @@ Il utilisera efficacement les instruments internationaux de lutte contre la dél
 et le blanchiment de l’argent sale.<br>
 La transparence seule ne garantissant pas l’équité, il importe également que des mécanismes de
 partage équitable des ressources publiques soient conçus et mis en œuvre.
- </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
-    </div>
+
   </div>
-</div>
-<br>
+  <div class="modal-footer">
+  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+  </div>
+  </div>
+  </div>
+  </div>
+  <br>
 
 
-      </div>
-    </div>
+  </div>
+  </div>
   </div>
 
   <div class="card">
-    <div class="card-header" id="headingThree">
-      <h2 class="mb-0">
-        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-        Economie diversifiée et compétitive
-        <i class="fas fa-angle-down"></i>
-        </button>
-      </h2>
-     
-    </div>
-    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-      <div class="card-body">
-        
-<!-- Button trigger modal -->
-<a  href="#" class="" data-toggle="modal" data-target="#exampleModalScrollable12">
-<i class="fas fa-angle-right"></i> Croissance diversifiée et un rôle moteur au secteur privé: un nouveau modèle de
-croissance économique
-</a>
+  <div class="card-header" id="headingThree">
+  <h2 class="mb-0">
+  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+  Economie diversifiée et compétitive
+  <i class="fas fa-angle-down"></i>
+  </button>
+  </h2>
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModalScrollable12" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle12" aria-hidden="true">
+  </div>
+  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+  <div class="card-body">
+
+  <!-- Button trigger modal -->
+  <a  href="#" class="" data-toggle="modal" data-target="#exampleModalScrollable12">
+  <i class="fas fa-angle-right"></i> Croissance diversifiée et un rôle moteur au secteur privé: un nouveau modèle de
+  croissance économique
+  </a>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalScrollable12" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle12" aria-hidden="true">
   <div class="modal-dialog modal-dialog-scrollable" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalScrollableTitle12">Croissance diversifiée et un rôle moteur au secteur privé: un nouveau modèle de
-croissance économique</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-      D’importants investissements seront nécessaires pour réaliser les profondes transformations
+  <div class="modal-content">
+  <div class="modal-header">
+  <h5 class="modal-title" id="exampleModalScrollableTitle12">Croissance diversifiée et un rôle moteur au secteur privé: un nouveau modèle de
+  croissance économique</h5>
+  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+  <span aria-hidden="true">&times;</span>
+  </button>
+  </div>
+  <div class="modal-body">
+
+D’importants investissements seront nécessaires pour réaliser les profondes transformations
 économiques et sociales qui assureront le bien être auquel aspirent les djiboutiens et
 djiboutiennes. Ces réalisations ne seront possibles que si le secteur privé prend véritablement
 une place prépondérante, jouant un rôle moteur dans l’économie. La majeure partie de ces
@@ -994,33 +1021,35 @@ national à travers l’adoption de système
 d’élevage approprié;<br>
 • La promotion de la recherche-développement
 en élevage.
-    </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
-    </div>
+
   </div>
-</div>
-<br>
+  <div class="modal-footer">
+  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+  </div>
+  </div>
+  </div>
+  </div>
+  <br>
 
 
-<!-- Button trigger modal -->
-<a  href="#" class="" data-toggle="modal" data-target="#exampleModalScrollable13">
-<i class="fas fa-angle-right"></i> Une politique macroéconomique vertueuse
-</a>
+  <!-- Button trigger modal -->
+  <a  href="#" class="" data-toggle="modal" data-target="#exampleModalScrollable13">
+  <i class="fas fa-angle-right"></i> Une politique macroéconomique vertueuse
+  </a>
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModalScrollable13" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle13" aria-hidden="true">
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalScrollable13" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle13" aria-hidden="true">
   <div class="modal-dialog modal-dialog-scrollable" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalScrollableTitle13">Une politique macroéconomique vertueuse</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-      Pour répondre aux exigences de la vision à long terme, notamment une croissance économique
+  <div class="modal-content">
+  <div class="modal-header">
+  <h5 class="modal-title" id="exampleModalScrollableTitle13">Une politique macroéconomique vertueuse</h5>
+  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+  <span aria-hidden="true">&times;</span>
+  </button>
+  </div>
+  <div class="modal-body">
+
+Pour répondre aux exigences de la vision à long terme, notamment une croissance économique
 rapide, forte et stable pour garantir les progrès, le pays surveillera les fondamentaux de son
 économie, en maitrisant particulièrement ses opérations financières.<br>
 L’Etat veillera à préserver et à maintenir une prévisibilité, une stabilité macroéconomique et
@@ -1036,35 +1065,37 @@ impôts et taxes, des exonérations et de la fraude. Seront également privilég
 la législation fiscale et une reforme fiscale qui favorisent la production, l’investissement productif
 et soutiennent la création d’emplois. La programmation des actions et la reforme réglementaire
 seront conformes à l’édification des marchés et espaces économiques régionaux.
- </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
-    </div>
+
   </div>
-</div>
-<br>
+  <div class="modal-footer">
+  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+  </div>
+  </div>
+  </div>
+  </div>
+  <br>
 
 
-<!-- Button trigger modal -->
-<a  href="#" class="" data-toggle="modal" data-target="#exampleModalScrollable14">
-<i class="fas fa-angle-right"></i> La Mise en place d’une stratégie adéquate de financement et de préservation des
-équilibres financiers
-</a>
+  <!-- Button trigger modal -->
+  <a  href="#" class="" data-toggle="modal" data-target="#exampleModalScrollable14">
+  <i class="fas fa-angle-right"></i> La Mise en place d’une stratégie adéquate de financement et de préservation des
+  équilibres financiers
+  </a>
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModalScrollable14" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle14" aria-hidden="true">
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalScrollable14" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle14" aria-hidden="true">
   <div class="modal-dialog modal-dialog-scrollable" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalScrollableTitle14"> La Mise en place d’une stratégie adéquate de financement et de préservation des
-équilibres financiers</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-      Pour réunir les conditions d’un véritable développement, l’Etat créera un environnement
+  <div class="modal-content">
+  <div class="modal-header">
+  <h5 class="modal-title" id="exampleModalScrollableTitle14"> La Mise en place d’une stratégie adéquate de financement et de préservation des
+  équilibres financiers</h5>
+  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+  <span aria-hidden="true">&times;</span>
+  </button>
+  </div>
+  <div class="modal-body">
+
+Pour réunir les conditions d’un véritable développement, l’Etat créera un environnement
 permettant de mobiliser aisément des ressources financières importantes à court, moyen et long
 termes à des conditions compétitives.<br>
 S’agissant des ressources à moyen et long termes qui font le plus souvent défaut, l’Etat
@@ -1076,64 +1107,66 @@ Le développement du secteur bancaire se poursuivra avec l’encouragement à l�
 des établissements de renommée internationale, et les structures de crédit seront également
 dynamisées par une ouverture plus large à la concurrence. Enfin, les systèmes de paiement
 seront développés et particulièrement, l’utilisation de la monétique.
- </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
-    </div>
+
   </div>
-</div>
-<br>
-
-
-<!-- Button trigger modal -->
-<a  href="#" class="" data-toggle="modal" data-target="#exampleModalScrollable15">
-<i class="fas fa-angle-right"></i> Le développement d’un marché financier
-</a>
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModalScrollable15" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle15" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-scrollable" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalScrollableTitle15">Le développement d’un marché financier</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-      L’Etat va promouvoir le développement d’un marché financier. D’ici 2015, l’Etat prendra toutes
-les dispositions réglementaires et financières pour établir à Djibouti une Bourse régionale de
-matières premières et de valeurs en liaison avec les pays de la sous région. Une politique de
-dynamisation et de rayonnement sera développée pour faire de Djibouti à l’horizon de 2035
-une véritable place financière. </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
+  <div class="modal-footer">
+  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
   </div>
-</div>
-<br>
+  </div>
+  </div>
+  </div>
+  <br>
 
 
-<!-- Button trigger modal -->
-<a  href="#" class="" data-toggle="modal" data-target="#exampleModalScrollable16">
-<i class="fas fa-angle-right"></i> Assurer un approvisionnement du pays
-</a>
+  <!-- Button trigger modal -->
+  <a  href="#" class="" data-toggle="modal" data-target="#exampleModalScrollable15">
+  <i class="fas fa-angle-right"></i> Le développement d’un marché financier
+  </a>
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModalScrollable16" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle16" aria-hidden="true">
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalScrollable15" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle15" aria-hidden="true">
   <div class="modal-dialog modal-dialog-scrollable" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalScrollableTitle16">Assurer un approvisionnement du pays</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-      L’économie de notre pays s’ouvrira largement aux mutations extérieures mais ira également à la
+  <div class="modal-content">
+  <div class="modal-header">
+  <h5 class="modal-title" id="exampleModalScrollableTitle15">Le développement d’un marché financier</h5>
+  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+  <span aria-hidden="true">&times;</span>
+  </button>
+  </div>
+  <div class="modal-body">
+  L’Etat va promouvoir le développement d’un marché financier. D’ici 2015, l’Etat prendra toutes
+  les dispositions réglementaires et financières pour établir à Djibouti une Bourse régionale de
+  matières premières et de valeurs en liaison avec les pays de la sous région. Une politique de
+  dynamisation et de rayonnement sera développée pour faire de Djibouti à l’horizon de 2035
+  une véritable place financière. </div>
+  <div class="modal-footer">
+  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+  <button type="button" class="btn btn-primary">Save changes</button>
+  </div>
+  </div>
+  </div>
+  </div>
+  <br>
+
+
+  <!-- Button trigger modal -->
+  <a  href="#" class="" data-toggle="modal" data-target="#exampleModalScrollable16">
+  <i class="fas fa-angle-right"></i> Assurer un approvisionnement du pays
+  </a>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalScrollable16" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle16" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable" role="document">
+  <div class="modal-content">
+  <div class="modal-header">
+  <h5 class="modal-title" id="exampleModalScrollableTitle16">Assurer un approvisionnement du pays</h5>
+  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+  <span aria-hidden="true">&times;</span>
+  </button>
+  </div>
+  <div class="modal-body">
+
+L’économie de notre pays s’ouvrira largement aux mutations extérieures mais ira également à la
 conquête de nouveaux marchés et de nouvelles technologies nécessaires à son développement.
 Tout en tirant un meilleur profit de sa présence dans l’espace francophone et arabe, le pays
 engagera des actions spécifiques de diversification vers les partenaires anglophones. Pour ce
@@ -1142,33 +1175,35 @@ L’Etat développera, en liaison avec le secteur privé, une stratégie agressi
 marchés sous régional et mondial. A cet effet, le pays développera également une capacité
 à collecter les informations techniques, financières, commerciales sur ses potentialités et ses
 concurrents, et les mettre à la disposition de son secteur privé.
- </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
-    </div>
+
   </div>
-</div>
-<br>
+  <div class="modal-footer">
+  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+  </div>
+  </div>
+  </div>
+  </div>
+  <br>
 
 
-<!-- Button trigger modal -->
-<a  href="#" class="" data-toggle="modal" data-target="#exampleModalScrollable17">
-<i class="fas fa-angle-right"></i> Promouvoir l’attractivité du pays et des partenariats stratégiques
-</a>
+  <!-- Button trigger modal -->
+  <a  href="#" class="" data-toggle="modal" data-target="#exampleModalScrollable17">
+  <i class="fas fa-angle-right"></i> Promouvoir l’attractivité du pays et des partenariats stratégiques
+  </a>
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModalScrollable17" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle17" aria-hidden="true">
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalScrollable17" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle17" aria-hidden="true">
   <div class="modal-dialog modal-dialog-scrollable" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalScrollableTitle17">Promouvoir l’attractivité du pays et des partenariats stratégiques</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-      L’Etat favorisera l’ouverture du pays aux investisseurs par la mise en place d’incitations en vue
+  <div class="modal-content">
+  <div class="modal-header">
+  <h5 class="modal-title" id="exampleModalScrollableTitle17">Promouvoir l’attractivité du pays et des partenariats stratégiques</h5>
+  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+  <span aria-hidden="true">&times;</span>
+  </button>
+  </div>
+  <div class="modal-body">
+
+L’Etat favorisera l’ouverture du pays aux investisseurs par la mise en place d’incitations en vue
 de développer des secteurs stratégiques pour l’économie nationale, sans lesquelles le délai de
 récupération de l’investissement serait long.<br>
 L’environnement devra être particulièrement favorable à l’attrait d’entreprises étrangères à la
@@ -1204,35 +1239,37 @@ de conduire les réflexions et analyses stratégiques permanentes;<br>
 le renforcement du système statistique national ainsi que la production, la diffusion et
 la communication régulières dans la transparence d’analyses économiques fiables sur le
 pays.
- </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
-    </div>
+
   </div>
-</div>
-<br>
+  <div class="modal-footer">
+  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+  </div>
+  </div>
+  </div>
+  </div>
+  <br>
 
 
-<!-- Button trigger modal -->
-<a  href="#" class="" data-toggle="modal" data-target="#exampleModalScrollable18">
-<i class="fas fa-angle-right"></i> Un aménagement judicieux du territoire : un Plan global et intégré d’aménagement du
-territoire national
-</a>
+  <!-- Button trigger modal -->
+  <a  href="#" class="" data-toggle="modal" data-target="#exampleModalScrollable18">
+  <i class="fas fa-angle-right"></i> Un aménagement judicieux du territoire : un Plan global et intégré d’aménagement du
+  territoire national
+  </a>
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModalScrollable18" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle18" aria-hidden="true">
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalScrollable18" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle18" aria-hidden="true">
   <div class="modal-dialog modal-dialog-scrollable" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalScrollableTitle18">Un aménagement judicieux du territoire : un Plan global et intégré d’aménagement du
-territoire national</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-      La politique d’aménagement du territoire permettra de solutionner les problèmes concernant
+  <div class="modal-content">
+  <div class="modal-header">
+  <h5 class="modal-title" id="exampleModalScrollableTitle18">Un aménagement judicieux du territoire : un Plan global et intégré d’aménagement du
+  territoire national</h5>
+  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+  <span aria-hidden="true">&times;</span>
+  </button>
+  </div>
+  <div class="modal-body">
+
+La politique d’aménagement du territoire permettra de solutionner les problèmes concernant
 l’organisation de l’espace rural:<br>
 • la question des terres arables et les ressources foncières;<br>
 • le renforcement du rôle des villes petites et moyennes;<br>
@@ -1427,33 +1464,35 @@ plans directeurs d’aménagement, notamment son assainissement. L’Etat pourra
 travers un Programme quinquennal spécial des Fêtes tournantes du 27 Juin, qui consiste à
 organiser la cérémonie dans une capitale, et à cet effet, planifier et budgétiser la construction
 des infrastructures prioritaires et essentielles.
- </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
-    </div>
+
   </div>
-</div>
-<br>
+  <div class="modal-footer">
+  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+  </div>
+  </div>
+  </div>
+  </div>
+  <br>
 
 
-<!-- Button trigger modal -->
-<a  href="#" class="" data-toggle="modal" data-target="#exampleModalScrollable19">
-<i class="fas fa-angle-right"></i> Une politique globale de l’emploi
-</a>
+  <!-- Button trigger modal -->
+  <a  href="#" class="" data-toggle="modal" data-target="#exampleModalScrollable19">
+  <i class="fas fa-angle-right"></i> Une politique globale de l’emploi
+  </a>
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModalScrollable19" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle19" aria-hidden="true">
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalScrollable19" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle19" aria-hidden="true">
   <div class="modal-dialog modal-dialog-scrollable" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalScrollableTitle19">Une politique globale de l’emploi</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-      C’est par le travail que l’individu assure son insertion sociale, en participant à la création des
+  <div class="modal-content">
+  <div class="modal-header">
+  <h5 class="modal-title" id="exampleModalScrollableTitle19">Une politique globale de l’emploi</h5>
+  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+  <span aria-hidden="true">&times;</span>
+  </button>
+  </div>
+  <div class="modal-body">
+
+C’est par le travail que l’individu assure son insertion sociale, en participant à la création des
 richesses nationales. L’exclusion de l’emploi constitue par conséquent la forme d’exclusion la
 plus sévère car elle engendre des effets qui viennent renforcer la marginalisation et enferme les
 individus dans le cercle vicieux de la pauvreté.<br>
@@ -1487,52 +1526,54 @@ Au total, l’Etat se dotera sur cette période d’une stratégie à long terme
 ultime forte d’accroitre la créativité, les capacités d’innovation et de découverte des centres
 nationaux d’excellence. Cette stratégie permettra, dans un monde dominé de plus en plus par
 la concurrence économique internationale, de créer et de sauvegarder des emplois.
- </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
-<br>
 
-        </div>
-    </div>
+  </div>
+  <div class="modal-footer">
+  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+  </div>
+  </div>
+  </div>
+  </div>
+  <br>
+
+  </div>
+  </div>
   </div>
 
   <div class="card">
-    <div class="card-header" id="headingFor">
-      <h2 class="mb-0">
-        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFor" aria-expanded="false" aria-controls="collapseFor">
-       Consolidation du capital humain 
-       <i class="fas fa-angle-down"></i>
-        </button>
-      </h2>
-      
-    </div>
-    <div id="collapseFor" class="collapse" aria-labelledby="headingFor" data-parent="#accordionExample">
-      <div class="card-body">
-    
+  <div class="card-header" id="headingFor">
+  <h2 class="mb-0">
+  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFor" aria-expanded="false" aria-controls="collapseFor">
+  Consolidation du capital humain 
+  <i class="fas fa-angle-down"></i>
+  </button>
+  </h2>
 
-<!-- Button trigger modal -->
-<a  href="#" class="" data-toggle="modal" data-target="#exampleModalScrollable20">
-<i class="fas fa-angle-right"></i> Assurer le bien être des djiboutiens et djiboutiennes, une finalité du développement à
-long terme
-</a>
+  </div>
+  <div id="collapseFor" class="collapse" aria-labelledby="headingFor" data-parent="#accordionExample">
+  <div class="card-body">
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModalScrollable20" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle20" aria-hidden="true">
+
+  <!-- Button trigger modal -->
+  <a  href="#" class="" data-toggle="modal" data-target="#exampleModalScrollable20">
+  <i class="fas fa-angle-right"></i> Assurer le bien être des djiboutiens et djiboutiennes, une finalité du développement à
+  long terme
+  </a>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalScrollable20" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle20" aria-hidden="true">
   <div class="modal-dialog modal-dialog-scrollable" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalScrollableTitle20">Assurer le bien être des djiboutiens et djiboutiennes, une finalité du développement à
-long terme</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-      Assurer le bien être des djiboutiens et djiboutiennes constitue la finalité de Djibouti 2035,
+  <div class="modal-content">
+  <div class="modal-header">
+  <h5 class="modal-title" id="exampleModalScrollableTitle20">Assurer le bien être des djiboutiens et djiboutiennes, une finalité du développement à
+  long terme</h5>
+  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+  <span aria-hidden="true">&times;</span>
+  </button>
+  </div>
+  <div class="modal-body">
+
+Assurer le bien être des djiboutiens et djiboutiennes constitue la finalité de Djibouti 2035,
 prenant l’individu à la fois comme acteur et bénéficiaire. La recherche du bien être se fonde sur
 les aspirations profondes des populations et vise à apporter des réponses appropriées à leurs
 besoins notamment en matière de santé, d’éducation-formation et d’emplois, d’habitat et de
@@ -1545,34 +1586,36 @@ en œuvre: une politique sanitaire globale axée sur la prévision, la préventi
 une politique de l’environnement, du cadre de vie et des loisirs, une politique d’habitat et de
 logement et une politique de sécurité et de défense globale garantissant la sécurité du territoire,
 des personnes et des biens.
- </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
-    </div>
+
   </div>
-</div>
-<br>
+  <div class="modal-footer">
+  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+  </div>
+  </div>
+  </div>
+  </div>
+  <br>
 
 
 
-<!-- Button trigger modal -->
-<a  href="#" class="" data-toggle="modal" data-target="#exampleModalScrollable21">
-<i class="fas fa-angle-right"></i> Réduire la pauvreté (actions sociales, solidarité…)
-</a>
+  <!-- Button trigger modal -->
+  <a  href="#" class="" data-toggle="modal" data-target="#exampleModalScrollable21">
+  <i class="fas fa-angle-right"></i> Réduire la pauvreté (actions sociales, solidarité…)
+  </a>
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModalScrollable21" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle21" aria-hidden="true">
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalScrollable21" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle21" aria-hidden="true">
   <div class="modal-dialog modal-dialog-scrollable" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalScrollableTitle21"> Réduire la pauvreté (actions sociales, solidarité…)</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-      Le Gouvernement en relation avec ses partenaires a engagé à travers le DSRP 2006 et l’INDS
+  <div class="modal-content">
+  <div class="modal-header">
+  <h5 class="modal-title" id="exampleModalScrollableTitle21"> Réduire la pauvreté (actions sociales, solidarité…)</h5>
+  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+  </div>
+  <div class="modal-body">
+
+Le Gouvernement en relation avec ses partenaires a engagé à travers le DSRP 2006 et l’INDS
 2008-2012, des politiques publiques de réduction de la pauvreté. Malheureusement la fin de
 la dernière décennie a subi d’importants chocs exogènes, de graves fluctuations climatiques
 entrainant des sécheresses et la flambée des prix intérieurs.<br>
@@ -1588,34 +1631,36 @@ se situe à 41,9% avec un seuil de 169 137 FDJ, soit environ 955,6 USD.
 Pour lutter de manière efficace contre la pauvreté, il faudra se pencher plus sur le domaine
 social, par la création de « filets de sécurité » afin de répondre aux besoins des groupes sociaux
 les plus vulnérables (chômeurs, personnes âgées, femmes, enfants, etc.). 
- </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
-    </div>
+
   </div>
-</div>
-<br>
+  <div class="modal-footer">
+  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+  </div>
+  </div>
+  </div>
+  </div>
+  <br>
 
 
 
-<!-- Button trigger modal -->
-<a  href="#" class="" data-toggle="modal" data-target="#exampleModalScrollable22">
-<i class="fas fa-angle-right"></i> Une politique sanitaire globale axée sur la prévision, la prévention et l’éducationsensibilisation
-</a>
+  <!-- Button trigger modal -->
+  <a  href="#" class="" data-toggle="modal" data-target="#exampleModalScrollable22">
+  <i class="fas fa-angle-right"></i> Une politique sanitaire globale axée sur la prévision, la prévention et l’éducationsensibilisation
+  </a>
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModalScrollable22" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle22" aria-hidden="true">
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalScrollable22" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle22" aria-hidden="true">
   <div class="modal-dialog modal-dialog-scrollable" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalScrollableTitle22">Une politique sanitaire globale axée sur la prévision, la prévention et l’éducationsensibilisation</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-      Le système sanitaire visera à améliorer l’état de santé et le bien être social de la population par
+  <div class="modal-content">
+  <div class="modal-header">
+  <h5 class="modal-title" id="exampleModalScrollableTitle22">Une politique sanitaire globale axée sur la prévision, la prévention et l’éducationsensibilisation</h5>
+  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+  <span aria-hidden="true">&times;</span>
+  </button>
+  </div>
+  <div class="modal-body">
+
+Le système sanitaire visera à améliorer l’état de santé et le bien être social de la population par
 l’adaptation qualitative et quantitative de l’offre des prestations sanitaires et sociales. Dans cette
 optique, la vision globale du système sanitaire développera deux composantes intimement
 liées: la production des prestations sanitaires et la prise en charge de celles-ci.
@@ -1641,34 +1686,36 @@ l’éducation sanitaire et nutritionnelle.
 Le rôle de la femme sera déterminant pour contribuer à enraciner des pratiques et comportements
 nouveaux, des changements de mentalités mais aussi des prises de consciences individuelles et
 collectives.
- </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
-    </div>
+
   </div>
-</div>
-<br>
+  <div class="modal-footer">
+  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+  </div>
+  </div>
+  </div>
+  </div>
+  <br>
 
 
 
-<!-- Button trigger modal -->
-<a  href="#" class="" data-toggle="modal" data-target="#exampleModalScrollable23">
-<i class="fas fa-angle-right"></i> Un nouveau système éducatif est nécessaire
-</a>
+  <!-- Button trigger modal -->
+  <a  href="#" class="" data-toggle="modal" data-target="#exampleModalScrollable23">
+  <i class="fas fa-angle-right"></i> Un nouveau système éducatif est nécessaire
+  </a>
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModalScrollable23" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle23" aria-hidden="true">
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalScrollable23" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle23" aria-hidden="true">
   <div class="modal-dialog modal-dialog-scrollable" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalScrollableTitle23"> Un nouveau système éducatif est nécessaire</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-      Dans le cadre de l’accumulation du capital humain, le système éducatif visera l’accès à une
+  <div class="modal-content">
+  <div class="modal-header">
+  <h5 class="modal-title" id="exampleModalScrollableTitle23"> Un nouveau système éducatif est nécessaire</h5>
+  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+  <span aria-hidden="true">&times;</span>
+  </button>
+  </div>
+  <div class="modal-body">
+
+Dans le cadre de l’accumulation du capital humain, le système éducatif visera l’accès à une
 éducation de base pour tous, qui délivre le savoir, le savoir-faire et le savoir-être, et est axé sur
 l’excellence.<br>
 La vision de développement à long terme sera articulée autour de trois principes:<br> (i) un
@@ -1692,34 +1739,36 @@ aux fins d’éducation;<br>
 • la mise en place d’un programme accéléré d’alphabétisation.<br>
 Au niveau de l’enseignement supérieur, l’Etat mettra en place une Ecole de formation d’Ingénieurs
 et de Polytechniciens en fonction des besoins de développement de l’économie nationale.
- </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
-    </div>
+
   </div>
-</div>
-<br>
+  <div class="modal-footer">
+  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+  </div>
+  </div>
+  </div>
+  </div>
+  <br>
 
 
 
-<!-- Button trigger modal -->
-<a  href="#" class="" data-toggle="modal" data-target="#exampleModalScrollable24">
-<i class="fas fa-angle-right"></i> Promouvoir une stratégie de sécurité alimentaire et nutritionnelle
-</a>
+  <!-- Button trigger modal -->
+  <a  href="#" class="" data-toggle="modal" data-target="#exampleModalScrollable24">
+  <i class="fas fa-angle-right"></i> Promouvoir une stratégie de sécurité alimentaire et nutritionnelle
+  </a>
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModalScrollable24" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle24" aria-hidden="true">
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalScrollable24" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle24" aria-hidden="true">
   <div class="modal-dialog modal-dialog-scrollable" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalScrollableTitle24">Promouvoir une stratégie de sécurité alimentaire et nutritionnelle</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-          </button>
-      </div>
-      <div class="modal-body">
-      La sécurité alimentaire est un enjeu majeur pour les politiques publiques, la réduction de la
+  <div class="modal-content">
+  <div class="modal-header">
+  <h5 class="modal-title" id="exampleModalScrollableTitle24">Promouvoir une stratégie de sécurité alimentaire et nutritionnelle</h5>
+  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+  <span aria-hidden="true">&times;</span>
+  </button>
+  </div>
+  <div class="modal-body">
+
+La sécurité alimentaire est un enjeu majeur pour les politiques publiques, la réduction de la
 pauvreté et de la faim constituant d’ailleurs le premier OMD. L’état des ressources naturelles, en
 particulier l’eau, apparaît de plus en plus comme un facteur limitant pour faire face à ce défi.
 La sécurité alimentaire et nutritionnelle résultera de la promotion d’une stratégie agricole
@@ -1743,36 +1792,38 @@ mise en place d’un cadre approprié pour la rentabilisation des activités agr
 la réduction du coût des intrants et des facteurs de production, <br>(iv) la mise en place de
 mécanismes de financement adaptés au monde rural,<br> (v) la promotion de la commercialisation
 et la disponibilité des réserves foncières.
- </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
-    </div>
+
   </div>
-</div>
-<br>
+  <div class="modal-footer">
+  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+  </div>
+  </div>
+  </div>
+  </div>
+  <br>
 
 
 
-<!-- Button trigger modal -->
-<a  href="#" class="" data-toggle="modal" data-target="#exampleModalScrollable25">
-<i class="fas fa-angle-right"></i> Développer une politique de logement adapté à l’environnement socioculturel
-national
-</a>
+  <!-- Button trigger modal -->
+  <a  href="#" class="" data-toggle="modal" data-target="#exampleModalScrollable25">
+  <i class="fas fa-angle-right"></i> Développer une politique de logement adapté à l’environnement socioculturel
+  national
+  </a>
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModalScrollable25" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle25" aria-hidden="true">
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalScrollable25" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle25" aria-hidden="true">
   <div class="modal-dialog modal-dialog-scrollable" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalScrollableTitle25">Développer une politique de logement adapté à l’environnement socioculturel
-national</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-      Le logement occupe une place centrale dans l’amélioration des conditions et cadre de vie, du
+  <div class="modal-content">
+  <div class="modal-header">
+  <h5 class="modal-title" id="exampleModalScrollableTitle25">Développer une politique de logement adapté à l’environnement socioculturel
+  national</h5>
+  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+  <span aria-hidden="true">&times;</span>
+  </button>
+  </div>
+  <div class="modal-body">
+
+Le logement occupe une place centrale dans l’amélioration des conditions et cadre de vie, du
 bien être des populations. L’accès à un logement décent et adapté à l’environnement socio
 culturel constitue une condition essentielle d’un épanouissement de la cellule familiale. Dès
 lors, un type d’habitat et de logement répondant aux conditions climatiques sera développé.
@@ -1802,34 +1853,36 @@ produits localement et la mise en place de normes de construction adaptées;<br>
 • La résorption de l’habitat insalubre;<br>
 • L’instauration de subventions publiques pour la réalisation des infrastructures primaires
 pour les opérations à caractère social et des avantages fiscaux pour les promoteurs.
- </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
-    </div>
+
   </div>
-</div>
-<br>
+  <div class="modal-footer">
+  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+  </div>
+  </div>
+  </div>
+  </div>
+  <br>
 
 
 
-<!-- Button trigger modal -->
-<a  href="#" class="" data-toggle="modal" data-target="#exampleModalScrollable26">
-<i class="fas fa-angle-right"></i> Définir et mettre en œuvre une politique nationale de population
-</a>
+  <!-- Button trigger modal -->
+  <a  href="#" class="" data-toggle="modal" data-target="#exampleModalScrollable26">
+  <i class="fas fa-angle-right"></i> Définir et mettre en œuvre une politique nationale de population
+  </a>
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModalScrollable26" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle26" aria-hidden="true">
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalScrollable26" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle26" aria-hidden="true">
   <div class="modal-dialog modal-dialog-scrollable" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalScrollableTitle26">Définir et mettre en œuvre une politique nationale de population</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-      Dans la perspective d’une croissance forte et durable, l’augmentation de la population constitue
+  <div class="modal-content">
+  <div class="modal-header">
+  <h5 class="modal-title" id="exampleModalScrollableTitle26">Définir et mettre en œuvre une politique nationale de population</h5>
+  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+  <span aria-hidden="true">&times;</span>
+  </button>
+  </div>
+  <div class="modal-body">
+
+Dans la perspective d’une croissance forte et durable, l’augmentation de la population constitue
 une priorité immédiate, ce qui appelle la mise en œuvre d’une politique nationale de population
 et une action volontariste en matière de démographie interne. Dans cette optique, les femmes
 ont un rôle décisif dans les politiques à mettre en œuvre.<br>
@@ -1840,34 +1893,36 @@ particulièrement important. <br>
 Par ailleurs, la planification de la croissance démographique appelle la maitrise des flux
 migratoires, notamment ceux liés aux sécheresses et conflits sous régionaux qui entrainent
 d’importants déplacements de populations.
- </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
-    </div>
+
   </div>
-</div>
-<br>
+  <div class="modal-footer">
+  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+  </div>
+  </div>
+  </div>
+  </div>
+  <br>
 
 
 
-<!-- Button trigger modal -->
-<a  href="#" class="" data-toggle="modal" data-target="#exampleModalScrollable27">
-<i class="fas fa-angle-right"></i> Promouvoir la création artistique et culturelle.
-</a>
+  <!-- Button trigger modal -->
+  <a  href="#" class="" data-toggle="modal" data-target="#exampleModalScrollable27">
+  <i class="fas fa-angle-right"></i> Promouvoir la création artistique et culturelle.
+  </a>
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModalScrollable27" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle27" aria-hidden="true">
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalScrollable27" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle27" aria-hidden="true">
   <div class="modal-dialog modal-dialog-scrollable" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalScrollableTitle27">Promouvoir la création artistique et culturelle.</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-      En vue de promouvoir le développement de l’art et la culture, le Gouvernement créera un
+  <div class="modal-content">
+  <div class="modal-header">
+  <h5 class="modal-title" id="exampleModalScrollableTitle27">Promouvoir la création artistique et culturelle.</h5>
+  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+  <span aria-hidden="true">&times;</span>
+  </button>
+  </div>
+  <div class="modal-body">
+
+En vue de promouvoir le développement de l’art et la culture, le Gouvernement créera un
 environnement propice à la protection de la propriété intellectuelle, en conférant à l’artiste un
 statut juridique et social, et garantira la liberté d’expression et le pluralisme, sans omettre un
 cadre juridique et institutionnel pour la promotion des entrepreneurs et des entreprises de la
@@ -1901,50 +1956,51 @@ communautaire<br>
 dans le développement communautaire global.
 
 
- </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
-    </div>
   </div>
-</div>
-<br>
+  <div class="modal-footer">
+  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+  </div>
+  </div>
+  </div>
+  </div>
+  <br>
 
-      
-    </div>
-    </div>
+
+  </div>
+  </div>
   </div>
 
   <div class="card">
-    <div class="card-header" id="headingFive">
-      <h2 class="mb-0">
-        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-        Intégration régionale
-        <i class="fas fa-angle-down"></i>
-        </button>
-      </h2>
-      
-    </div>
-    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
-      <div class="card-body">
-      
-<!-- Button trigger modal -->
-<a  href="#" class="" data-toggle="modal" data-target="#exampleModalScrollable27">
-<i class="fas fa-angle-right"></i> Développer une intégration commerciale et une plate forme de services dans la sousrégion
-</a>
+  <div class="card-header" id="headingFive">
+  <h2 class="mb-0">
+  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+  Intégration régionale
+  <i class="fas fa-angle-down"></i>
+  </button>
+  </h2>
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModalScrollable27" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle27" aria-hidden="true">
+  </div>
+  <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+  <div class="card-body">
+
+  <!-- Button trigger modal -->
+  <a  href="#" class="" data-toggle="modal" data-target="#exampleModalScrollable27">
+  <i class="fas fa-angle-right"></i> Développer une intégration commerciale et une plate forme de services dans la sousrégion
+  </a>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalScrollable27" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle27" aria-hidden="true">
   <div class="modal-dialog modal-dialog-scrollable" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalScrollableTitle27">Développer une intégration commerciale et une plate forme de services dans la sousrégion</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-      Depuis le début des années 90, le commerce mondial est en croissance forte (il s’est multiplié
+  <div class="modal-content">
+  <div class="modal-header">
+  <h5 class="modal-title" id="exampleModalScrollableTitle27">Développer une intégration commerciale et une plate forme de services dans la sousrégion</h5>
+  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+  <span aria-hidden="true">&times;</span>
+  </button>
+  </div>
+  <div class="modal-body">
+
+Depuis le début des années 90, le commerce mondial est en croissance forte (il s’est multiplié
 en moyenne par 5), les IDE progressent, les blocs commerciaux régionaux prolifèrent et un tiers
 du commerce mondial s’inscrit dans les aires d’intégration régionale (Union- Européenne-PTM,
 ALENA, Mercosur, Asean, ACP, etc.).<br>
@@ -1954,33 +2010,35 @@ Marché commun africain. Dans cette perspective, l’Union Africaine a retenu ci
 économiques régionales (CER) et stipule que la construction de l’AEC se fera principalement par
 la coordination, l’harmonisation et l’intégration progressive des activités desdites communautés
 économiques régionales. 
- </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
-    </div>
+
   </div>
-</div>
-<br>
+  <div class="modal-footer">
+  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+  </div>
+  </div>
+  </div>
+  </div>
+  <br>
 
 
-<!-- Button trigger modal -->
-<a  href="#" class="" data-toggle="modal" data-target="#exampleModalScrollable28">
-<i class="fas fa-angle-right"></i> L’intégration commerciale de Djibouti au sein de l’IGAD, du COMESA et de la CAE 
-</a>
+  <!-- Button trigger modal -->
+  <a  href="#" class="" data-toggle="modal" data-target="#exampleModalScrollable28">
+  <i class="fas fa-angle-right"></i> L’intégration commerciale de Djibouti au sein de l’IGAD, du COMESA et de la CAE 
+  </a>
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModalScrollable28" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle28" aria-hidden="true">
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalScrollable28" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle28" aria-hidden="true">
   <div class="modal-dialog modal-dialog-scrollable" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalScrollableTitle28">L’intégration commerciale de Djibouti au sein de l’IGAD, du COMESA et de la CAE </h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-      Cette option stratégique vise le développement du commerce et des marchés inclusifs pour
+  <div class="modal-content">
+  <div class="modal-header">
+  <h5 class="modal-title" id="exampleModalScrollableTitle28">L’intégration commerciale de Djibouti au sein de l’IGAD, du COMESA et de la CAE </h5>
+  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+  <span aria-hidden="true">&times;</span>
+  </button>
+  </div>
+  <div class="modal-body">
+
+Cette option stratégique vise le développement du commerce et des marchés inclusifs pour
 permettre de tirer un meilleur profit des marchés communs et de bénéficier d’économies
 d’échelle. Le développement des infrastructures économiques intégratrices sera un axe majeur
 de coopération dans l’espace IGAD Economic Zone. <br>
@@ -2018,33 +2076,35 @@ aussi des mesures incitatives et prévoira un mécanisme de gestion des crises.<
 Il s’agit d’accorder la priorité à l’harmonisation et aux réformes nationales, de poursuivre les
 progrès réalisés dans la promotion de l’harmonisation et de l’intégration régionale dans les
 secteurs financier et commercial dans le cadre du Programme d’harmonisation monétaire.
- </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
-    </div>
+
   </div>
-</div>
-<br>
+  <div class="modal-footer">
+  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+  </div>
+  </div>
+  </div>
+  </div>
+  <br>
 
 
-<!-- Button trigger modal -->
-<a  href="#" class="" data-toggle="modal" data-target="#exampleModalScrollable29">
-<i class="fas fa-angle-right"></i> Djibouti, débouché maritime régional et plateforme de services
-</a>
+  <!-- Button trigger modal -->
+  <a  href="#" class="" data-toggle="modal" data-target="#exampleModalScrollable29">
+  <i class="fas fa-angle-right"></i> Djibouti, débouché maritime régional et plateforme de services
+  </a>
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModalScrollable29" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle29" aria-hidden="true">
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalScrollable29" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle29" aria-hidden="true">
   <div class="modal-dialog modal-dialog-scrollable" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalScrollableTitle29">Djibouti, débouché maritime régional et plateforme de services</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-      Bénéficiant de son ouverture sur la mer rouge qui le place sur la ligne maritime la plus utilisée
+  <div class="modal-content">
+  <div class="modal-header">
+  <h5 class="modal-title" id="exampleModalScrollableTitle29">Djibouti, débouché maritime régional et plateforme de services</h5>
+  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+  <span aria-hidden="true">&times;</span>
+  </button>
+  </div>
+  <div class="modal-body">
+
+Bénéficiant de son ouverture sur la mer rouge qui le place sur la ligne maritime la plus utilisée
 du commerce international, notre pays ambitionne de construire un pôle maritime régional à
 travers le développement de ses infrastructures notamment portuaires et aéroportuaires.
 Dans cette perspective, Notre pays a signé le 2 février 2012 avec l’Ethiopie et le Sud-Soudan
@@ -2059,33 +2119,35 @@ les exportations, le commerce régional et international.<br>
 Par ailleurs, l’utilisation des infrastructures portuaires et des zones franches par l’Ethiopie et le
 Sud Soudan, les terminaux gazier et pétrolier, l’extension de la ligne de chemin de fer DjiboutiEthiopie-Sud Soudan accéléreront à la fois l’expansion économique des pays et une véritable
 intégration des économies de la sous région.
- </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
-    </div>
+
   </div>
-</div>
-<br>
+  <div class="modal-footer">
+  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+  </div>
+  </div>
+  </div>
+  </div>
+  <br>
 
 
-<!-- Button trigger modal -->
-<a  href="#" class="" data-toggle="modal" data-target="#exampleModalScrollable30">
-<i class="fas fa-angle-right"></i> Renforcer la stratégie nationale de coopération internationale
-</a>
+  <!-- Button trigger modal -->
+  <a  href="#" class="" data-toggle="modal" data-target="#exampleModalScrollable30">
+  <i class="fas fa-angle-right"></i> Renforcer la stratégie nationale de coopération internationale
+  </a>
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModalScrollable30" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle30" aria-hidden="true">
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalScrollable30" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle30" aria-hidden="true">
   <div class="modal-dialog modal-dialog-scrollable" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalScrollableTitle30"> Renforcer la stratégie nationale de coopération internationale</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-      L’option stratégique permettra au pays de prendre une place de plus en plus prépondérante
+  <div class="modal-content">
+  <div class="modal-header">
+  <h5 class="modal-title" id="exampleModalScrollableTitle30"> Renforcer la stratégie nationale de coopération internationale</h5>
+  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+  <span aria-hidden="true">&times;</span>
+  </button>
+  </div>
+  <div class="modal-body">
+
+L’option stratégique permettra au pays de prendre une place de plus en plus prépondérante
 dans la coopération internationale à travers de libres choix ou des positions concernées dans
 les domaines politique et économique afin de prendre une meilleure place dans les mutations
 mondiales et en tirer le meilleur profit.<br>
@@ -2157,20 +2219,22 @@ ressources financières.<br>
 Il y a lieu de tenir compte des évolutions continuelles et des mutations enregistrées qui appellent
 à une vigilance accrue et à une capacité de réagir et s’adapter aux situations nouvelles et aux
 exigences que cela implique.
- </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
-    </div>
+
+
   </div>
-</div>
-<br>
-      </div>
-    </div>
+  <div class="modal-footer">
+  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
   </div>
-</div>
-</div>
-<?php include('footer.php');  ?>
+  </div>
+  </div>
+  </div>
+  <br>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  <?php include('footer.php');  ?>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
 integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
