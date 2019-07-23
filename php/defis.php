@@ -33,7 +33,11 @@ crossorigin="anonymous"
 Fondé le 4 mars 1977 à Dikhil, le RPP est né de la fusion de plusieurs formations politiques dont les dirigeants ont su minimiser leurs divergences pour œuvrer ensemble à l’unité nationale.
 Doyen des partis politiques existant à Djibouti, il est présidé depuis février 1999 par le chef de l’Etat, M. Ismaïl Omar Guelleh qui initie les initiatives pour améliorer la vie des ses compatriotes.
     </div>
-<h1  class="titre">Les challenges</h1>
+
+    <div class="titre">
+    <h1 >Les challenges</h1>
+    </div>
+
 <div class="content">
 
 <div class="card un">
@@ -127,6 +131,6 @@ crossorigin="anonymous"></script>
 integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
 crossorigin="anonymous"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-<script src="app.js"></script>
+<script src="../app.js"></script>
 </body>
 </html>
