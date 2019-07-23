@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,21 +18,21 @@ href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
 integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
 crossorigin="anonymous"
 />
-<link rel="stylesheet" type="text/css" media="screen" href="header.css" />
-<link rel="stylesheet" type="text/css" media="screen" href="footer.css" />
-<link rel="stylesheet" type="text/css" media="screen" href="bio.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="../css/header.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="../css/footer.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="../css/bio.css" />
 
 </head>
 <body>
 
-<?php include('header.php'); ?>
-<div class="jumbotron jumbotron-fluid">
+<?php include('./header.php'); ?>
+<div class="clip">
   </div>
 
 <div class="bio">
     <div class="first">
     <h4>Le Parcours Politique</h4>
-    <hr>
+    <hr class='l1'>
         <p>
        
 
@@ -42,11 +40,11 @@ L'analyse du parcours politique de Mr. lsmaïl Omar Guelleh est éloquent à plu
 
 Ses années de formation et de maturation s'articulent autour de trois étapes-clé : <br>
 
-    1-La période de lutte pour l'indépendance au cours de laquelle Mr. lsmaïl Omar Guelleh a fait preuve d'un engagement très actif qui entraîna en 1974 son éviction du corps de la sûreté générale. A partir de cette date, il metta toute son énergie pour insuffler un nouvel élan à la L.P.A. ( Ligue Populaire Africaine) présidée par Gouled.
+ <span>1-</span>   La période de lutte pour l'indépendance au cours de laquelle Mr. lsmaïl Omar Guelleh a fait preuve d'un engagement très actif qui entraîna en 1974 son éviction du corps de la sûreté générale. A partir de cette date, il metta toute son énergie pour insuffler un nouvel élan à la L.P.A. ( Ligue Populaire Africaine) présidée par Gouled.
 
 Durant cette période cruciale qui façonnait le destin de la future nation, il participera activement à la sensibilisation des citoyens à l'indépendance. Ses fréquentes participations aux Conférences internationales et l'expérience ainsi acquise lui ont permis d'être désigné comme membre de la délégation de la L.P.A.I. chargée de mener des négociations sur l'indépendance à Paris en 1976.
 <br>
-    2- Le 27 Juin 1977 date de la proclamation de l'indépendance, le Président de la République l'appelle à ses côtés pour lui confier la lourde responsabilité de Chef de Cabinet. Il n'a que 30 ans. Proche collaborateur du Président, le jeune Chef de Cabinet doit aussitôt gérer deux défis majeurs auxquels est confronté le nouvel État :
+<span>2-</span>  Le 27 Juin 1977 date de la proclamation de l'indépendance, le Président de la République l'appelle à ses côtés pour lui confier la lourde responsabilité de Chef de Cabinet. Il n'a que 30 ans. Proche collaborateur du Président, le jeune Chef de Cabinet doit aussitôt gérer deux défis majeurs auxquels est confronté le nouvel État :
 en assumant la lourde tâche de la sécurité intérieure et extérieure du pays
 en maîtrisant les risques d'affrontements inter-éthniques
 <br>
@@ -56,7 +54,7 @@ M. lsmaïl Omar Guelleh a ainsi fait preuve de ses grandes qualités professionn
 
 Militant du R.P.P. depuis sa création le 4 Mars 1979 puis président du Comité Central en 1981, il dirigera la commission culturelle du parti. En 1987, il intègre la plus haute instance politique de la formation et devient membre du Bureau Politique.
 <br>
-    3- Lors de la signature des Accords de Paix entre le Gouvernement et le FRUD, ses qualités de fin politicien se sont montrées déterminantes dans le processus de négociation qui déboucha sur la signature des Accords de Paix du 24 décembre 94 et du 12 mai 2001et ceci sans le recours à la médiation d'un pays tierce. Fort de ce succès politique et suite à la tempête qui secoua le parti en 1996, M. lsmaïl Omar Guelleh accède au poste de 3ème Vice Président du Bureau Politique. Ainsi son dévouement, sa riche expérience, sa défense acharnée des intérêts du pays, son sens de l'humilité, de tolérance et son souci constant de servir l'État justifient légitimement son ascension dans l'appareil politique autant de qualités qui le distinguent de l'ensemble des candidats virtuels à la fonction présidentielle et le classent ainsi dans l'infime catégorie d'hommes politiques qui ne laissent pas indifférents ceux qui les approchent.
+<span>3-</span>  Lors de la signature des Accords de Paix entre le Gouvernement et le FRUD, ses qualités de fin politicien se sont montrées déterminantes dans le processus de négociation qui déboucha sur la signature des Accords de Paix du 24 décembre 94 et du 12 mai 2001et ceci sans le recours à la médiation d'un pays tierce. Fort de ce succès politique et suite à la tempête qui secoua le parti en 1996, M. lsmaïl Omar Guelleh accède au poste de 3ème Vice Président du Bureau Politique. Ainsi son dévouement, sa riche expérience, sa défense acharnée des intérêts du pays, son sens de l'humilité, de tolérance et son souci constant de servir l'État justifient légitimement son ascension dans l'appareil politique autant de qualités qui le distinguent de l'ensemble des candidats virtuels à la fonction présidentielle et le classent ainsi dans l'infime catégorie d'hommes politiques qui ne laissent pas indifférents ceux qui les approchent.
 
         </p>
     </div>
@@ -65,7 +63,7 @@ Militant du R.P.P. depuis sa création le 4 Mars 1979 puis président du Comité
     <div class="deux">
 
     <h4> L'homme de l'Alliance RPP-FRUD</h4>
-    <hr>
+    <hr class='l2'>
     <p>
        
 L'homme que l'Alliance entre le rassemblement Populaire pour le progrès (RPP) et le front de la restauration de l'Unité et de la Démocratie (FRUD) ont choisi comme candidat aux élections présidentielles n'est pas un inconnu pour ses compatriotes.
@@ -80,7 +78,7 @@ L'histoire parle pour lui. Son passé d'indépendantiste, son dévouement, son r
 
 </div>
 
-<?php include('footer.php'); ?>
+<?php include('./footer.php'); ?>
 
     
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -93,6 +91,6 @@ crossorigin="anonymous"></script>
 integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
 crossorigin="anonymous"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-<script src="app.js"></script>
+<script src="../app.js"></script>
 </body>
 </html>

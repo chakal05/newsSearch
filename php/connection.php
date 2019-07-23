@@ -1,5 +1,5 @@
 <?php
-$link = mysqli_connect("localhost", "chakgpqj_balbala", "rZwfwt3_njm_", "chakgpqj_rpp");
+$link = mysqli_connect("localhost", "root", "chakal10", "rpp");
 if(mysqli_connect_error()) {
     die("database error".mysqli_connect_error());
     }

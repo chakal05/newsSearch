@@ -113,38 +113,30 @@ echo "
     <h4>Actualités</h4> <hr />
 
         <div class='text'>
-        
         <img src= '$firstImage'>
         <div class='content'>
         <p class='date'><i class='far fa-clock'></i>$firstDate</p>
         <h5>$firstTitre</h5>
         <p class='info'> $firstTexte</p>
         </div>
-    
-    
         </div>
 
         <div class='text'>
-        
         <img src=' $secondImage'>
         <div class='content'>
         <p class='date'><i class='far fa-clock'></i>$secondDate</p>
         <h5>$secondTitre</h5>
         <p class='info'> $secondTexte</p>
         </div>
-    
-    
-        </div>
+         </div>
 
-        <div class='text'>
-        
+        <div class='text bfrLink'>
         <img src='$thirdImage'>
         <div class='content'>
         <p class='date'><i class='far fa-clock'></i>$thirdDate</p>
         <h5>$thirdTitre</h5>
         <p class='info'> $thirdTexte</p>
         </div>
-    
         </div>
 
   <a href='http://rtd.dj/actualites/politique?start=5'> Voir plus d'actualites</a>

@@ -20,17 +20,16 @@ href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
 integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
 crossorigin="anonymous"
 />
-<link rel="stylesheet" type="text/css" media="screen" href="header.css" />
-<link rel="stylesheet" type="text/css" media="screen" href="footer.css" />
-<link rel="stylesheet" type="text/css" media="screen" href="missions.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="../css/header.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="../css/footer.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="../css/missions.css" />
 </head>
 <body>
     
 <div class="box">
 
-    <?php include('header.php');   ?>
-
-    <div class="jumbotron jumbotron-fluid">
+    <?php include('./header.php');   ?>
+<div class='clip'></div>
   </div>
 
   <div class="content">
@@ -58,7 +57,7 @@ Le RPP réaffirme son engagement total pour le soutien des causes de la Nation a
 Il réitère son soutien indéfectible à la cause palestinienne pour que le peuple frère palestinien puisse recouvrer ses droits légitimes à savoir la création d’un Etat indépendant et souverain sur le sol de la Palestine.</p>
   </div>
 
-<?php include('footer.php');  ?>
+<?php include('./footer.php');  ?>
 
 </div>
 
@@ -73,6 +72,6 @@ crossorigin="anonymous"></script>
 integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
 crossorigin="anonymous"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-<script src="app.js"></script>
+<script src="../app.js"></script>
 </body>
 </html>

@@ -1,158 +1,179 @@
+body,
+html {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+}
 footer {
-    width: 100%;
-   background-color: #016A3A;
-   color: #fff;
-   margin-top: 7%;
-   height:260px;
-    display:grid;
-    display:-ms-grid;
-     grid-template-columns: 1fr 1fr;
-     -ms-grid-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    -ms-grid-rows: auto;
-    grid-template-areas: 'left right'
-    'bas bas';
-    }
+  background-color: #016a3a;
+  color: #fff;
+  padding: 3%;
+  margin-bottom: -40px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
+  grid-template-areas: "first" "sec" "third";
+}
 
+ul {
+  text-align: center;
+  margin-bottom: 0;
+  list-style: none;
+  margin-top: 0;
+}
+ul li {
+  margin-top: 1%;
+}
+ul a {
+  color: #fff;
+}
+.firstList {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: first;
+  margin-left: 0;
+}
 
-.blanc{
-    color: #fff;
-    font-size: 17px;
-    padding-top: 3%;
+.secondList {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: sec;
+  margin-top: 3%;
 }
 
 .last {
- grid-area: bas;
- -ms-grid-row:2;
--ms-grid-column:1;
--ms-grid-column-span:2;
- text-align:right;
- margin-top:3.5rem;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: third;
+  margin-top: 2rem;
+  text-align: center;
 }
 
-.last p{
-    font-size:13px;
-    padding-left:-5rem;
-     margin-right:2rem;
+.last p {
+  margin-right: 0;
 }
 
- li{
-    font-size: 13px;
-    margin-top: 1%;
+.last a {
+  color: #fff;
 }
 
- ul{
-    list-style: none;
+i {
+  margin-right: 5%;
 }
-
-
- a{
-    color: #fff;
-}
-
- a:hover{
-color: #fff;
-}
-
- .firstList{
-     color: #fff;
-     margin-left:3%;
-     -ms-grid-row:1;
--ms-grid-column:1;
-    grid-area: left;
-}
-
-.secondList{
-    color: #fff;
-    -ms-grid-row:1;
--ms-grid-column:2;
-    grid-area:right;
-}
-
-i{
-    color:#fff;
-   margin-right:3%;
-}
-
-
-/* Smaller devices (400px ---- iphone5*/
-@media (max-width: 400px) { 
-footer{
-    height:360px;
-    display:-ms-grid;
-display:grid;
--ms-grid-columns: 1fr;
-grid-template-columns: 1fr;
--ms-grid-rows: auto;
-grid-template-rows: auto;
-    grid-template-areas: "first"
-"sec"
-"third";
-;
-}
-
- ul{
-    text-align: center;
-    margin-bottom: 0;
-    margin-top: 0;
-}
-.firstList{
--ms-grid-row:1;
--ms-grid-column:1;
-grid-area:first;
-margin-left:0;
-}
-
-.secondList{
-    -ms-grid-row:2;
--ms-grid-column:1;
-grid-area:sec;
-}
-
-.last{
-    -ms-grid-row:3;
--ms-grid-column:1;
-grid-area:third;
-margin-top:2rem;
-text-align:center;
-}
-
-.last p{
-    margin-right:0;
-}
-
-i{
-    margin-right: 5%;
-}
-
-}
-
-
 
 /* Large devices (ipad, 768px and up) */
-@media (min-width: 768px) { 
+@media (min-width: 768px) {
+  footer {
+    width: 100%;
+    margin-top: 7%;
+    height: 260px;
+    display: grid;
+    display: -ms-grid;
+    grid-template-columns: 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    -ms-grid-rows: auto;
+    grid-template-areas:
+      "left right"
+      "bas bas";
+  }
 
+  .blanc {
+    color: #fff;
+    font-size: 17px;
+    padding-top: 3%;
+  }
 
- 
-li {
+  .last {
+    grid-area: bas;
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    text-align: center;
+    margin-top: 3.5rem;
+  }
+
+  .last p {
+    font-size: 13px;
+    padding-left: -5rem;
+    margin-right: 2rem;
+  }
+
+  li {
+    font-size: 13px;
+    margin-top: 1%;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  a {
+    color: #fff;
+  }
+
+  a:hover {
+    color: #fff;
+  }
+
+  .firstList {
+    color: #fff;
+    margin-left: 3%;
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: left;
+  }
+
+  .secondList {
+	color: #fff;
+	margin-top: .1%;
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: right;
+  }
+
+  i {
+    color: #fff;
+    margin-right: 3%;
+  }
+  li {
     font-size: 15px;
-}
-
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) { 
- 
+@media (min-width: 992px) {
+  footer{
+    height: 301px;
+  }
+  .blanc {
+    padding: 0;
+  }
 
-    .blanc{
-        padding: 0;
-    }
+  .firstList,
+  .secondList {
+    padding-top: 1%;
+  }
 
-    .firstList, .secondList{
-        padding-top: 1%;
-    }
-    
-    .fab, .fas{
-        margin-right: 3%;
-    }
+  .fab,
+  .fas {
+    margin-right: 3%;
+  }
+}
+
+
+@media (min-width: 1501px) {
+  footer{
+    height: 351px;
+  }
 }

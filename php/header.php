@@ -98,7 +98,7 @@ while($m = mysqli_fetch_array($quer)){
 <?php  echo "
         <nav class='navbar navbar-expand-lg navbar-dark'>
         <a class='navbar-brand' href='index.php'>
-        <img src='images/logo.png' width='60' height='60' />
+        <img src='../images/logo.png' width='60' height='60' />
         </a>
         <button
         class='navbar-toggler'

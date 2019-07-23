@@ -1,4 +1,5 @@
 <?php
+
 require('connection.php');
 $success = '';
  
@@ -57,7 +58,6 @@ if (array_key_exists('abonner', $_POST)){
   }
   
 }
-
 ?>
 
 <!DOCTYPE html>
@@ -81,50 +81,26 @@ href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
 integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
 crossorigin="anonymous"
 />
-<link rel="stylesheet" type="text/css" media="screen" href="header.css" />
-<link rel="stylesheet" type="text/css" media="screen" href="getNews.css" />
-<link rel="stylesheet" type="text/css" media="screen" href="footer.css" />
-<link rel="stylesheet" type="text/css" media="screen" href="index.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="../css/header.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="../css/getNews.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="../css/footer.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="../css/index.css" />
 </head>
 <body>
 
 
     
       <?php echo $success;  ?>
-    <header><?php include('header.php');  ?></header>
+    <header><?php include('./header.php');  ?></header>
    
 <div class="box">
 
-    <div class="bd-example">
-  <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-      <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-    </ol>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-      <img src="images/pic1.jpg" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="images/pic.jpg" class="d-block w-100" alt="...">
-      </div>
-
-      
-      
-    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
+<div class='clipBox'>
+  <div class="clip"></div>
   </div>
-  </div>
-</div>
 
 <div class="checked">
-  <h3>Notre politique s'impose à Djibouti </h3> <br>
+<h3>Notre politique s'impose à Djibouti !</h3> <br>
 <p><i class="fas fa-check"></i> LE RPP s'engage pour la  fin de la faim a Djibouti.</p>
 <p><i class="fas fa-check"></i> Nous voulons un dévelopement généralisé dans toutes les régions djiboutiennes.</p>
 <p><i class="fas fa-check"></i> Nous poursuivons une croissance économique constante.</p>
@@ -132,9 +108,9 @@ crossorigin="anonymous"
 
     <div class="cercle">
 
-   <a class="rond" href="defis.php">Défis</a>
-   <a class="rond" href="bio.php" >IOG</a>
-   <a class="rond" href="missions.php" >Missions</a>
+   <a class="rond" href="./defis.php">Défis</a>
+   <a class="rond" href="./bio.php" >IOG</a>
+   <a class="rond" href="./missions.php" >Missions</a>
     </div>
 
     <div class="social">
@@ -151,7 +127,7 @@ crossorigin="anonymous"
     </div>
 
     <div>
-        <?php include('getNews.php'); ?>
+        <?php include('./getNews.php'); ?>
     </div>
 
     <div class="status">
@@ -162,7 +138,7 @@ Le parti s’appuie et utilise ses Annexes pour entreprendre ses activités et a
 Les Annexes tirent leur force de la population au sein de laquelle elles recrutent leurs futurs militants par les actions de sensibilisation et de mobilisation qu’elles mènent constamment en son sein.
 Les Annexes abritent les rencontres des militants et/ou des militants avec la population des quartiers, des villes ou des villages aux fins d’information, d’échanges d’idées et de sensibilisation. Dans ces lieux, les militants définissent les différents objectifs à réaliser.</p>
     <br />
-     <a href="missions.php">Lire plus</a> 
+     <a href="./missions.php">Lire plus</a> 
     </div>
 
     <div class="newsletter">
@@ -205,7 +181,7 @@ Les Annexes abritent les rencontres des militants et/ou des militants avec la po
     
     </div>
 
-     <?php  include('footer.php'); ?>
+     <?php  include('./footer.php'); ?>
 
 
    
@@ -223,6 +199,6 @@ crossorigin="anonymous"></script>
 integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
 crossorigin="anonymous"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-<script src="app.js"></script>
+<script src="../app.js"></script>
 </body>
 </html>

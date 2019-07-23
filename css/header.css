@@ -97,6 +97,27 @@
     .topRight{
         position: absolute;
         right: 1%;
+        top: 3%;
+    }
+}
+
+
+@media (min-width: 1201px) {
+    .topRight{
         top: -2%;
+    }
+}
+
+
+@media (min-width: 1501px) {
+    .topRight{
+        top: -4%;
+    }
+}
+
+
+@media (min-width: 1901px) {
+    .topRight{
+        top: -1rem;
     }
 }
