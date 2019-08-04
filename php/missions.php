@@ -33,7 +33,7 @@ crossorigin="anonymous"
   </div>
 
   <div class="content">
-  <h2>Nos missions </h2>
+  <h3>Nos missions </h3>
 <p> En cette période où notre pays est définitivement dans sa deuxième étape de son existence à savoir l’étape de la construction et du développement national, le RPP proclame, devant l’Histoire son engagement à jouer pleinement son rôle de Parti Politique.Un Parti politique démocratique et moderne, porteur d’espoir et d’idées nouvelles et animé des grands desseins pour son pays et pour les Djiboutiens.
 Héritier des Mouvements nationaux qui ont lutté pour l’indépendance nationale, il a, dès sa création su unir et intégrer en son sein toutes les forces vives de la Nation. Il a ainsi fait sa priorité la consolidation de l’Unité Nationale tout en étant l’artisan des réalisations économiques et sociales qu’a connues notre pays depuis son accession à l’indépendance.
 Fort de cette expérience, notre Parti amorce une mutation qui doit lui permettre de continuer le combat pour vaincre le sous-développement et pour satisfaire les aspirations de la population vers un mieux être social.

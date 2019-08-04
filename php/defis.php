@@ -29,9 +29,9 @@ crossorigin="anonymous"
     <div class="box">
    <div class='clip'></div>
 <div class="text">
-  <h1>Le Rassemblement Populaire pour le Progrès.</h1>
-Fondé le 4 mars 1977 à Dikhil, le RPP est né de la fusion de plusieurs formations politiques dont les dirigeants ont su minimiser leurs divergences pour œuvrer ensemble à l’unité nationale.
-Doyen des partis politiques existant à Djibouti, il est présidé depuis février 1999 par le chef de l’Etat, M. Ismaïl Omar Guelleh qui initie les initiatives pour améliorer la vie des ses compatriotes.
+  <h3>Le Rassemblement Populaire pour le Progrès.</h3>
+<p>Fondé le 4 mars 1977 à Dikhil, le RPP est né de la fusion de plusieurs formations politiques dont les dirigeants ont su minimiser leurs divergences pour œuvrer ensemble à l’unité nationale.
+Doyen des partis politiques existant à Djibouti, il est présidé depuis février 1999 par le chef de l’Etat, M. Ismaïl Omar Guelleh qui initie les initiatives pour améliorer la vie des ses compatriotes.<p>
     </div>
 
     <div class="titre">

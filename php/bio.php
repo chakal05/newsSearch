@@ -31,7 +31,7 @@ crossorigin="anonymous"
 
 <div class="bio">
     <div class="first">
-    <h4>Le Parcours Politique</h4>
+    <h3>Le Parcours Politique</h3>
     <hr class='l1'>
         <p>
        
@@ -61,7 +61,7 @@ Militant du R.P.P. depuis sa création le 4 Mars 1979 puis président du Comité
     
     <div class="deux">
 
-    <h4> L'homme de l'Alliance RPP-FRUD</h4>
+    <h3> L'homme de l'Alliance RPP-FRUD</h3>
     <hr class='l2'>
     <p>
        

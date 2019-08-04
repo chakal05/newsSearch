@@ -5,35 +5,43 @@ body {
   overflow-x: hidden;
 }
 
-*, *::after, *::before{
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-} 
+}
 .box {
   width: 100%;
 }
 
 .clip {
-  clip-path: polygon(50% 0%, 100% 0, 100% 75%, 50% 100%, 0% 75%, 0 0);
   background: url("../images/iog1.jpg");
+  clip-path: polygon(50% 0%, 100% 0, 100% 75%, 50% 100%, 0% 75%, 0 0);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   width: 100%;
   height: 80vh;
+  z-index: -3;
 }
 
 .checked h3 {
-  color: #016a3a;
+  background-color:#016a3a;
+  color: #fff;
   text-align: center;
   width: 70%;
-  padding: 0;
+  padding: 3%;
   margin: auto;
+  margin-bottom: 1rem;
+  position: relative;
+  z-index: 100;
 }
 
 .checked {
   padding: 2%;
+  margin-top: -7rem;
 }
 
 .checked .fas {
@@ -179,7 +187,6 @@ body {
 
 /* Smaller screen*/
 @media (max-width: 320px) {
-
   .cercle .rond {
     width: 90px;
     height: 90px;
@@ -188,10 +195,12 @@ body {
 }
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
-  .clip {
-    background-position: center 3%;
-  }
-
+    .clip {
+      clip-path: polygon(50% 0%, 100% 0, 100% 100%, 100% 100%, 0 89%, 0 0);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
   .checked {
     width: 97%;
     margin: auto;
@@ -205,11 +214,10 @@ body {
     background-color: #016a3a;
     margin-right: 3%;
     color: #fff;
-    margin-top: -0.5rem;
-    padding-top: 5%;
-    padding-right: 3%;
-    padding-left: 3%;
-    border-radius: 2px;
+    text-align: center;
+    display: grid;
+    justify-items: center;
+    align-items: center;
   }
 
   .checked p {
@@ -255,16 +263,13 @@ body {
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  .clip {
-    background-position: center -3em;
-  }
+
   .checked p {
     margin-top: -1rem;
     padding: 5px;
   }
   .cercle {
-    margin-top: 3rem;
-    height: 250px;
+    margin: 5rem auto;
   }
 
   .cercle .rond {
@@ -273,24 +278,20 @@ body {
     padding-top: 6%;
   }
 
-  .social h3{
+  .social h3 {
     margin-top: -2rem;
   }
-
-
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
- 
-  .checked h3{
-    padding-top: 3%;
-    margin-left: 5rem;
-    margin-right: 5rem;
+  .clip{
+    background-position: center 3%;
   }
 
-  .checked p{
-    margin-top: -.5rem;
+
+  .checked p {
+    margin-top: -0.5rem;
   }
   .cercle {
     width: 100%;
@@ -346,27 +347,29 @@ body {
 /* Large screen */
 
 @media (min-width: 1500px) {
-  img{
+  .clip{
+    background-position: center 9%;
+  }
+  img {
     height: 210px;
     width: 210px;
   }
-  .cercle .rond{
+  .cercle .rond {
     padding-top: 4%;
+  }
+  .checked h3{
+    margin-left: 3rem;
+    margin-right: 7rem;
   }
 }
 
-
 @media (min-width: 1900px) {
-  .cercle .rond{
+  .cercle .rond {
     padding-top: 3.3%;
   }
 
-  .checked h3{
-    margin-left: 3rem;
-    margin-right: 13rem;
-  }
-
-  .social h3{
+ 
+  .social h3 {
     margin-top: -4rem;
   }
 }

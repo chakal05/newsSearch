@@ -21,13 +21,14 @@ img {
 }
 
 .clip {
-  clip-path: polygon(50% 0%, 100% 0, 100% 100%, 100% 89%, 0 100%, 0 0);
-  background: url("../images/pic1.jpg");
+  clip-path: polygon(50% 0%, 100% 0, 100% 75%, 50% 100%, 0% 75%, 0 0);
+  background: url("../images/pic.jpg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center -3rem;
   background-size: cover;
   width: 100%;
   height: 80vh;
+  z-index: -3;
 }
 
 .text {
@@ -35,27 +36,35 @@ img {
   padding: 3%;
   width: 95%;
   margin: 0 auto;
+  margin-top: -5rem;
   margin-bottom: 2rem;
 }
 
-.text h1 {
-  color: rgb(2, 59, 33);
-  margin-top: 0;
-  font-size: 23px;
-  margin-bottom: 2rem;
-  text-align: right;
+.text h3 {
+  background-color: #016a3a;
+  color: #fff;
+  padding: 3%;
+  width: 70%;
+  margin: auto;
+  margin-top: -1rem;
+  margin-bottom: 3rem;
+  text-align: center;
+  position: relative;
+  z-index: 100;
 }
 
 .titre {
   color: rgb(2, 59, 33);
   width: 90%;
-  margin: auto;
+  margin: 3rem auto;
   text-align: center;
 }
 
 .titre h1 {
   font-size: 23px;
 }
+
+
 
 .content {
   padding: 3%;
@@ -93,7 +102,16 @@ img {
 }
 /* ipad*/
 @media (min-width: 768px) {
-  .text h1 {
+  .clip {
+    clip-path: polygon(50% 0%, 100% 0, 100% 100%, 100% 100%, 0 89%, 0 0);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .text{
+    margin-top: 0;
+  }
+  .text h3 {
     width: 40%;
     float: left;
     padding: 5%;
@@ -102,10 +120,9 @@ img {
     color: #fff;
     height: 200px;
     border-radius: 3px;
-    text-align: left;
+    text-align: center;
     display: grid;
     justify-items: center;
-    align-items: center;
   }
 
   .titre {
@@ -184,11 +201,11 @@ img {
   }
 }
 
-@media (min-width: 923px) {
+@media (min-width: 992px) {
   .text {
     margin-top: 1%;
   }
-  .text h1 {
+  .text h3 {
     margin-top: -2%;
     height: 170px;
 	padding-top: 3%;
@@ -198,12 +215,12 @@ img {
   }
 
   .text p {
-    margin-top: 5%;
+    margin-top: 1rem;
   }
 
   .titre {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
   }
   .content {
     display: -ms-grid;
@@ -288,8 +305,8 @@ img {
 
 @media (min-width: 1343px) {
   .titre {
-	margin-top: 4rem;
-	margin-bottom: 1rem;
+	margin-top: 5rem;
+  margin-bottom: 3rem;
   }
 
   .content{

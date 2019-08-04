@@ -3,6 +3,7 @@ body {
 	width: 100%;
 	height: 100%;
 	overflow-x: hidden;
+	font-family: 'Montserrat', sans-serif;
 }
 
 *,
@@ -21,29 +22,32 @@ img {
 }
 
 .clip {
-	clip-path: polygon(50% 0%, 100% 0, 100% 100%, 100% 89%, 0 100%, 0 0);
-	background: url('../images/pic1.jpg');
+	background: url('../images/pic2.jpg');
+	clip-path: polygon(50% 0%, 100% 0, 100% 75%, 50% 100%, 0% 75%, 0 0);
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: center ;
 	background-size: cover;
 	width: 100%;
 	height: 80vh;
+	z-index: -3;
 }
 
 
 .content {
 	padding: 3%;
-	width: 100%;
+	margin-top: -5.5rem;
 }
 
 .content h3 {
-	color: rgb(2, 59, 33);
-	margin-top: -2rem;
-	font-size: 23px;
-	font-weight: 500;
-	margin-bottom: 1%;
-	text-align: right;
-	margin-right: 3%;
+	background-color:#016a3a;
+	color: #fff;
+	text-align: center;
+	width: 70%;
+	padding: 3%;
+	margin: auto;
+	margin-bottom: 1rem;
+	position: relative;
+	z-index: 100;
 }
 
 .content p {
@@ -97,33 +101,37 @@ img {
 }
 
 @media (min-width: 768px) {
-	.jumbotron {
-		height: 300px;
-	}
+	.clip {
+		clip-path: polygon(50% 0%, 100% 0, 100% 100%, 100% 100%, 0 89%, 0 0);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+	  }
 
 	.content {
 		border: none;
+		margin-top: 0;
 		margin-bottom: 3%;
 	}
 
 	.content h3 {
 		width: 40%;
 		float: left;
-		padding-top: 9%;
 		font-size: 23px;
 		margin-right: 3%;
+		margin-left:1rem;
 		background-color: #016a3a;
 		color: #fff;
 		height: 180px;
-		margin-top: 1%;
-		border-radius: 3px;
-		margin-left: 3%;
 		text-align: center;
+		display: grid;
+		justify-items: center;
+		align-items: center;
+		margin-top: 1.5rem;
+		margin-bottom: 1%;
 	}
 
-	.content p {
-		margin-top: -2%;
-	}
+
 
 	.card .fa-angle-down {
 		right: 3%;
@@ -131,7 +139,7 @@ img {
 	}
 }
 
-@media (min-width: 992px) {
+@media (min-width: 963px) {
 	.jumbotron .container {
 		top: -5.5rem;
 		left: 11rem;
@@ -140,17 +148,31 @@ img {
 
 	.content {
 		padding: 1%;
-		margin-top: 2%;
 		margin-bottom: 2%;
 	}
 
 	.content h3 {
-		margin-top: 1%;
-		height: 220px;
-		padding-top: 5%;
+		margin-top: 3rem;
+		margin-left:3rem;
+		height: 200px;
+		margin-bottom: 2rem;
 	}
 
 	.content p {
 		margin-top: .3%;
+	}
+}
+
+
+@media (min-width: 992px) {
+	.content h3{
+		margin-left:5rem;
+	}
+}
+
+
+@media (min-width: 1301px) {
+	.content p{
+		margin-top: 1%;
 	}
 }
