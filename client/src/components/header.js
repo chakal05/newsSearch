@@ -71,7 +71,7 @@ export default function ButtonAppBar() {
 							<TextField
 								autoFocus
 								margin='dense'
-								id='name'
+								id='email'
 								label='Email Address'
 								type='email'
 								fullWidth
@@ -93,9 +93,21 @@ export default function ButtonAppBar() {
 							<Button
 								onClick={async () => {
 									await axios
-										.get('http://localhost:4000/users')
-										.then((response) => console.log(response.data));
-									setOpen(false);
+										.get('/users', {
+											params: {
+												email: document.getElementById(
+													'email'
+												).value,
+												password: document.getElementById(
+													'password'
+												).value,
+											},
+										})
+										.then((response) =>
+											response.status === 200
+												? setOpen(false)
+												: ''
+										);
 								}}
 								color='primary'>
 								Subscribe

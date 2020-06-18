@@ -1,11 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Router,Switch, Route} from 'react-router-dom';  
+import { Router, Switch, Route } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import CssBaseline from '@material-ui/core/CssBaseline';
 //import store from './redux/store/index';
 import Landing from './pages/landing';
+import Annons from './components/annons';
 import history from './services/history';
 import MyHeader from './components/header';
 import Container from '@material-ui/core/Container';
@@ -19,8 +20,8 @@ function App() {
 			<Container maxWidth='xl'>
 				<Router history={history}>
 					<MyHeader />
-					 <Switch> 
-						 <Route path='/' exact component={Landing} /> 
+					<Switch>
+						<Route path='/' exact component={Landing} />
 
 						{/*
 							<Route
@@ -29,14 +30,16 @@ function App() {
 								component={Annonser}
 							/>
                         */}
-						{/*<Route path='/annonser/:id' component={JobPost} /> */}
-					</Switch> 
+						<Route path='/annonser/:id' component={Annons} />
+					</Switch>
 				</Router>
 			</Container>
-	</>
+		</>
 	);
 }
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
-{ /* <Provider   store={storage}  ></Provider> */}
+{
+	/* <Provider   store={storage}  ></Provider> */
+}

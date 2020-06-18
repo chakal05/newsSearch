@@ -6,31 +6,33 @@ mongoose.connect('mongodb://localhost/coloc', {
 	useUnifiedTopology: true,
 });
 
-// 'useFindAndModify' set to false
+//'useFindAndModify' set to false
 
 mongoose.set('useFindAndModify', false);
+
 //Connection to db
 
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 
-// Message schema
+// User schema
 
 const userSchema = new mongoose.Schema({
-	username: String,
+	name: String,
 	password: String,
+	email: String,
 	age: String,
 	gender: String,
-    city: Number,
-    photo: String,
+	city: Number,
+	photo: String,
 	professionalSituation: String,
 	published: String,
 	availableFrom: String,
 });
 
 async function loadUsers() {
-	let user = mongoose.model('posts', userSchema);
-	return user;
+	let users = mongoose.model('users', userSchema);
+	return users;
 }
 
 // add Message
@@ -59,19 +61,18 @@ router.post('/', async function (req, res) {
 // get personel list
 
 router.get('/', async function (req, res) {
-
 	const query = await loadUsers();
 	// Get all messages
 
-	query
-		.find({}, (error, posts) => {
-            if (error) return res.send(error);
-            console.log(posts)
-			return res.send(posts);
-		})
-		.catch((err) => {
-			throw err;
+	if (req.query.email && req.query.password) {
+		const result = await query.findOne({
+			password: req.query.password,
+			email: req.query.email,
 		});
+
+		if (result) return res.status(200).send('User found');
+		else return res.status(404).send('User not found bro');
+	}
 });
 
 router.get('/:id', async function (req, res) {
