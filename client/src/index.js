@@ -6,7 +6,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import CssBaseline from '@material-ui/core/CssBaseline';
 //import store from './redux/store/index';
 import Landing from './pages/landing';
-import Annons from './components/annons';
+import Annonser from './pages/annonser';
+import Dashboard from './pages/dashboard';
 import history from './services/history';
 import MyHeader from './components/header';
 import Container from '@material-ui/core/Container';
@@ -23,14 +24,13 @@ function App() {
 					<Switch>
 						<Route path='/' exact component={Landing} />
 
-						{/*
-							<Route
-								exact
-								path='/annonser'
-								component={Annonser}
-							/>
-                        */}
-						<Route path='/annonser/:id' component={Annons} />
+						<Route
+							exact
+							path='/annonser'
+							component={Annonser}
+						/>
+
+						<Route path='/dashboard' component={Dashboard} />
 					</Switch>
 				</Router>
 			</Container>

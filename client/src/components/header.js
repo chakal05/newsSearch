@@ -1,6 +1,6 @@
 import React from 'react';
 import axios from 'axios';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
@@ -30,7 +30,7 @@ const useStyles = makeStyles((theme) => ({
 	},
 }));
 
-export default function ButtonAppBar() {
+export default function Header() {
 	const [open, setOpen] = React.useState(false);
 
 	const classes = useStyles();
@@ -48,7 +48,7 @@ export default function ButtonAppBar() {
 						{' '}
 						Lägg in annons{' '}
 					</NavLink>
-					<NavLink className={classes.rightLinks} to=''>
+					<NavLink className={classes.rightLinks} to='/annonser'>
 						{' '}
 						Annonser{' '}
 					</NavLink>
@@ -103,11 +103,14 @@ export default function ButtonAppBar() {
 												).value,
 											},
 										})
-										.then((response) =>
-											response.status === 200
-												? setOpen(false)
-												: ''
-										);
+										.then((response) => {
+											if (response.status === 200) {
+												return (window.location.href =
+													'/dashboard');
+											} else {
+												setOpen(false);
+											}
+										});
 								}}
 								color='primary'>
 								Subscribe

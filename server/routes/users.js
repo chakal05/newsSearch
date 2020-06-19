@@ -1,6 +1,8 @@
 const express = require('express');
 const router = express.Router();
 const mongoose = require('mongoose');
+const jwt = require('jsonwebtoken');
+const bcrypt = require('bcryptjs');
 mongoose.connect('mongodb://localhost/coloc', {
 	useNewUrlParser: true,
 	useUnifiedTopology: true,
@@ -70,8 +72,24 @@ router.get('/', async function (req, res) {
 			email: req.query.email,
 		});
 
-		if (result) return res.status(200).send('User found');
-		else return res.status(404).send('User not found bro');
+		if (result) {
+			let check = bcrypt.compareSync(
+				req.query.password,
+				result.password
+			);
+
+			if (check) {
+				const accessToken = jwt.sign(
+					result,
+					process.env.SECRET_TOKEN
+				);
+				return res.status(200).json({ accessToken: accessToken });
+			} else {
+				return res.status(404).send('Incorrect password');
+			}
+		} else {
+			return res.status(404).send('Email or password incorrect');
+		}
 	}
 });
 

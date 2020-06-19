@@ -3,9 +3,7 @@ const app = express();
 const cors = require('cors');
 const bodyParser = require('body-parser');
 const helmet = require('helmet');
-app.use(
-	bodyParser.urlencoded({ extended: true })
-);
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(
 	cors({
@@ -15,14 +13,11 @@ app.use(
 );
 app.use(helmet());
 
-
 //Middleware
 
 const auth = function (req, res, next) {
 	if (!req.headers.authorization)
-		return res
-			.status(403)
-			.json({ error: 'No credentials sent!' });
+		return res.status(403).json({ error: 'No credentials sent!' });
 
 	next();
 };
@@ -43,6 +38,4 @@ app.use('/users', users);
 // }
 
 const port = process.env.port || 4000;
-app.listen(port, () =>
-	console.log('APP RUNNING ON PORT 4000')
-);
+app.listen(port, () => console.log('APP RUNNING ON PORT 4000'));
