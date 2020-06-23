@@ -3,6 +3,7 @@ const router = express.Router();
 const mongoose = require('mongoose');
 const jwt = require('jsonwebtoken');
 const bcrypt = require('bcryptjs');
+const salt = bcrypt.genSaltSync(12);
 mongoose.connect('mongodb://localhost/coloc', {
 	useNewUrlParser: true,
 	useUnifiedTopology: true,

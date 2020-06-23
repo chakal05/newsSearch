@@ -7,6 +7,7 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 //import store from './redux/store/index';
 import Landing from './pages/landing';
 import Annonser from './pages/annonser';
+import Login from './pages/login';
 import Dashboard from './pages/dashboard';
 import history from './services/history';
 import MyHeader from './components/header';
@@ -18,12 +19,12 @@ function App() {
 	return (
 		<>
 			<CssBaseline />
-			<Container maxWidth='xl'>
+			<Container maxWidth='md'>
 				<Router history={history}>
 					<MyHeader />
 					<Switch>
 						<Route path='/' exact component={Landing} />
-
+						<Route path='/login' exact component={Login} />
 						<Route
 							exact
 							path='/annonser'
@@ -40,6 +41,6 @@ function App() {
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
-{
-	/* <Provider   store={storage}  ></Provider> */
-}
+// //{
+// //	 <Provider   store={storage}  ></Provider> 
+// }
