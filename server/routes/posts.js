@@ -21,9 +21,14 @@ const postSchema = new mongoose.Schema({
 	postOwnerId: String,
 	postHeadline: String,
 	postDescription: String,
-	budget: Number,
+	rent: Number,
 	location: String,
-	published: String,
+    moveIn: String,
+    moveOut: String,
+    numberOfGuest: Number,
+    numberOfRums: Number,
+    size: String,
+    published: String,
 	availableFrom: String,
 });
 

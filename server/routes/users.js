@@ -21,7 +21,7 @@ db.on('error', console.error.bind(console, 'connection error:'));
 // User schema
 
 const userSchema = new mongoose.Schema({
-	name: String,
+	username: String,
 	password: String,
 	email: String,
 	age: String,
@@ -30,7 +30,7 @@ const userSchema = new mongoose.Schema({
 	photo: String,
 	professionalSituation: String,
 	published: String,
-	availableFrom: String,
+	canMoveIn: String,
 });
 
 async function loadUsers() {

@@ -19,22 +19,16 @@ function App() {
 	return (
 		<>
 			<CssBaseline />
-			<Container maxWidth='md'>
-				<Router history={history}>
-					<MyHeader />
-					<Switch>
-						<Route path='/' exact component={Landing} />
-						<Route path='/login' exact component={Login} />
-						<Route
-							exact
-							path='/annonser'
-							component={Annonser}
-						/>
+			<Router history={history}>
+				<MyHeader />
+				<Switch>
+					<Route path='/' exact component={Landing} />
+					<Route path='/login' exact component={Login} />
+					<Route exact path='/annonser' component={Annonser} />
 
-						<Route path='/dashboard' component={Dashboard} />
-					</Switch>
-				</Router>
-			</Container>
+					<Route path='/dashboard' component={Dashboard} />
+				</Switch>
+			</Router>
 		</>
 	);
 }
@@ -42,5 +36,5 @@ function App() {
 ReactDOM.render(<App />, document.getElementById('root'));
 
 // //{
-// //	 <Provider   store={storage}  ></Provider> 
+// //	 <Provider   store={storage}  ></Provider>
 // }
