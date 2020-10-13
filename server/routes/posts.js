@@ -29,7 +29,6 @@ const postSchema = new mongoose.Schema({
     numberOfRums: Number,
     size: String,
     published: String,
-	availableFrom: String,
 });
 
 async function loadPosts() {

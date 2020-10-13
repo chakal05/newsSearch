@@ -27,10 +27,15 @@ const userSchema = new mongoose.Schema({
 	age: String,
 	gender: String,
 	city: Number,
-	photo: String,
+	imageName: {
+		type: String,
+		default: 'none',
+	},
+	imageData: {
+		type: String,
+	},
 	professionalSituation: String,
-	published: String,
-	canMoveIn: String,
+	memberSince: String,
 });
 
 async function loadUsers() {
@@ -38,17 +43,25 @@ async function loadUsers() {
 	return users;
 }
 
-// add Message
+// add post
 
 router.post('/', async function (req, res) {
 	let payload = {
-		senderName: 'req.body.name',
-		userFrom: 'req.body.from',
-		userTo: 'req.body.to',
-		headline: 'req.body.headline',
-		message: 'req.body.message',
-		time: 'req.body.time',
-		userToRead: 'req.body.user_to_read',
+		username: 'johan12',
+		password: bcrypt.hashSync('pass', salt),
+		email: 'johan@gmail.com',
+		age: 32,
+		gender: 'male',
+		city: 'Gothenburg',
+		imageName: {
+			type: String,
+			default: 'none',
+		},
+		imageData: {
+			type: String,
+		},
+		professionalSituation: 'Student',
+		memberSince: new Date().substr(0, 10),
 	};
 
 	let query = await loadUsers();
@@ -57,15 +70,15 @@ router.post('/', async function (req, res) {
 		if (err) return res.sendStatus(500).send(err);
 		return res
 			.status(200)
-			.send(`Message from db: Inserted a new row`);
+			.send(`Message from db: Inserted a new user`);
 	});
 });
 
-// get personel list
+// get users
 
 router.get('/', async function (req, res) {
 	const query = await loadUsers();
-	// Get all messages
+	// Get all users
 
 	if (req.query.email && req.query.password) {
 		const result = await query.findOne({
@@ -106,6 +119,7 @@ router.get('/:id', async function (req, res) {
 		});
 });
 
+// update message
 router.put('/:id', async function (req, res) {
 	const query = await loadUsers();
 	const update = {
