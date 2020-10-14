@@ -116,7 +116,7 @@ function Landing() {
 					<Grid container justify='center'>
                     <Grid item xs={4}>
                     {posts.map((item) => (
-                        <Card className={classes.card}>
+                        <Card className={classes.card} key={item} >
                             <CardHeader
                                 avatar={
                                     <Avatar

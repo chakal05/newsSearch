@@ -1,3 +1,4 @@
+require('dotenv').config()
 const express = require('express');
 const router = express.Router();
 const mongoose = require('mongoose');
@@ -24,16 +25,16 @@ const userSchema = new mongoose.Schema({
 	username: String,
 	password: String,
 	email: String,
-	age: String,
+	age: Number,
 	gender: String,
-	city: Number,
-	imageName: {
-		type: String,
-		default: 'none',
-	},
-	imageData: {
-		type: String,
-	},
+	city: String,
+	// imageName: {
+	// 	type: String,
+	// 	default: 'none',
+	// },
+	// imageData: {
+	// 	type: String,
+	// },
 	professionalSituation: String,
 	memberSince: String,
 });
@@ -53,24 +54,22 @@ router.post('/', async function (req, res) {
 		age: 32,
 		gender: 'male',
 		city: 'Gothenburg',
-		imageName: {
-			type: String,
-			default: 'none',
-		},
-		imageData: {
-			type: String,
-		},
+		// imageName: {
+		// 	type: 'jpg',
+		// 	default: 'none',
+		// },
+		// imageData: {
+		// 	type: 'jpg',
+		// },
 		professionalSituation: 'Student',
-		memberSince: new Date().substr(0, 10),
+		memberSince: new Date().toLocaleString(),
 	};
 
 	let query = await loadUsers();
 	const newMessage = new query(payload);
 	newMessage.save((err) => {
-		if (err) return res.sendStatus(500).send(err);
-		return res
-			.status(200)
-			.send(`Message from db: Inserted a new user`);
+		if (err) return console.log(err);
+		return res.send(`Message from db: Inserted a new user`);
 	});
 });
 
@@ -81,10 +80,11 @@ router.get('/', async function (req, res) {
 	// Get all users
 
 	if (req.query.email && req.query.password) {
+
 		const result = await query.findOne({
-			password: req.query.password,
 			email: req.query.email,
 		});
+
 
 		if (result) {
 			let check = bcrypt.compareSync(
@@ -94,15 +94,15 @@ router.get('/', async function (req, res) {
 
 			if (check) {
 				const accessToken = jwt.sign(
-					result,
+					JSON.parse(JSON.stringify(result)),
 					process.env.SECRET_TOKEN
-				);
-				return res.status(200).json({ accessToken: accessToken });
+                );
+				return res.send({ accessToken: accessToken });
 			} else {
-				return res.status(404).send('Incorrect password');
+				return res.send('Incorrect password');
 			}
 		} else {
-			return res.status(404).send('Email or password incorrect');
+			return res.send('Email or password incorrect');
 		}
 	}
 });

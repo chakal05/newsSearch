@@ -5,9 +5,9 @@ import { Provider } from 'react-redux';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import CssBaseline from '@material-ui/core/CssBaseline';
 //import store from './redux/store/index';
+import ProtectedRoute from './components/protectedRoute';
 import Landing from './pages/landing';
 import Annonser from './pages/annonser';
-import Login from './pages/login';
 import Dashboard from './pages/dashboard';
 import history from './services/history';
 import MyHeader from './components/header';
@@ -23,9 +23,12 @@ function App() {
 				<MyHeader />
 				<Switch>
 					<Route path='/' exact component={Landing} />
-					<Route path='/login' exact component={Login} />
-					<Route exact path='/annonser' component={Annonser} />
-
+					<ProtectedRoute
+						exact
+						path='/annonser'
+						component={Annonser}
+					/>
+					
 					<Route path='/dashboard' component={Dashboard} />
 				</Switch>
 			</Router>

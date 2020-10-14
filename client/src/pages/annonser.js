@@ -23,7 +23,8 @@ const useStyles = makeStyles((theme) => ({
 export default function Annonser() {
 	const classes = useStyles();
 	return (
-		<div className={classes.root}>
+        <div className={classes.root}>
+        <h1> Add annons </h1>
 			<form className={classes.form}>
 				<Grid container spacing={2} justify='center'>
 					<Grid item xs={5}>
