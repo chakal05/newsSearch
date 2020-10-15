@@ -1,6 +1,7 @@
 import React from 'react';
 import axios from 'axios';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Redirect } from 'react-router-dom';
+import history from '../services/history';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import AppBar from '@material-ui/core/AppBar';
@@ -11,7 +12,6 @@ import TextField from '@material-ui/core/TextField';
 import Dialog from '@material-ui/core/Dialog';
 import DialogActions from '@material-ui/core/DialogActions';
 import DialogContent from '@material-ui/core/DialogContent';
-import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
 
 const useStyles = makeStyles((theme) => ({
@@ -41,6 +41,8 @@ export default function Header() {
 	const [email, setEmail] = React.useState('');
 	const [pass, setPass] = React.useState('');
 	const [token, setToken] = React.useState(false);
+	const tokenUserEmail =
+		localStorage.getItem('tokenUserEmail') || '';
 
 	const parseJwt = (token) => {
 		var base64Url = token.split('.')[1];
@@ -67,60 +69,6 @@ export default function Header() {
 		}
 	};
 
-	const login = async () => {
-		if (email && pass) {
-			await axios
-				.get('/users', {
-					params: {
-						email: email,
-						password: pass,
-					},
-				})
-				.then((response) => {
-					if (response.status === 200) {
-						// Get token
-						const token = response.data.accessToken;
-
-						// Decode token
-						const decoded = parseJwt(token);
-						setToken(true);
-
-						//	Save token in an object
-
-						const userToken = {
-							accessToken: token,
-							tokenUserName: decoded.name,
-							tokenUserId: decoded._id,
-							tokenUserProfil: decoded.profil,
-						};
-						// Save object in localStorage
-						localStorage.setItem(
-							'userToken',
-							JSON.stringify(userToken)
-						);
-
-						//	Set header for subsequent request
-						setHeaders();
-
-						// change window
-
-						window.location.href = '../pages/annonser.js';
-					}
-				})
-				.catch((err) => {
-					if (err) {
-						throw err;
-					}
-				});
-			setOpen(false);
-		}
-	};
-
-	const logout = () => {
-		// localStorage.removeItem('accessToken');
-		// window.location.href = '../pages/landing.js';
-	};
-
 	return (
 		<div className={classes.root}>
 			<AppBar
@@ -133,13 +81,20 @@ export default function Header() {
 							Manedek
 						</NavLink>
 					</Typography>{' '}
-					<h3> {token && 'authenticated'} </h3>
+					<h3> {tokenUserEmail && { tokenUserEmail }} </h3>
+					<h3> {tokenUserEmail && { tokenUserEmail }} </h3>
 					<Typography className={classes.addAnnons}>
 						<NavLink
 							className={classes.rightLinks}
 							to='/annonser'>
 							{' '}
 							Lägg in annons{' '}
+						</NavLink>
+						<NavLink
+							className={classes.rightLinks}
+							to='/dashboard'>
+							{' '}
+							Dashboard{' '}
 						</NavLink>
 						{
 							//? Should disappear when user is logged in
@@ -150,6 +105,10 @@ export default function Header() {
 							onClick={() => {
 								if (!token) {
 									setOpen(true);
+								} else {
+									setToken(false);
+									localStorage.removeItem('userToken');
+									return history.push('/');
 								}
 							}}>
 							{token ? 'logout' : 'login'}
@@ -199,11 +158,70 @@ export default function Header() {
 									Cancel
 								</Button>
 								<Button
-									onClick={() => {
-										if (token) {
-											alert('done');
-										} else {
-											login();
+									onClick={async () => {
+										// User login
+
+										if (email && pass) {
+											await axios
+												.get('/users', {
+													params: {
+														email: email,
+														password: pass,
+													},
+												})
+												.then((response) => {
+													if (response.status === 200) {
+														// Get token
+														const token =
+															response.data
+																.accessToken;
+
+														// Decode token
+														const decoded = parseJwt(
+															token
+														);
+
+														setToken(true);
+
+														//	Save token in an object
+
+														const userToken = {
+															accessToken: token,
+															tokenUserName:
+																decoded.username,
+															tokenUserId: decoded._id,
+															tokenUserProfil:
+																decoded.profil,
+															tokenUserEmail:
+																decoded.email,
+														};
+														// Save object in localStorage
+														localStorage.setItem(
+															'userToken',
+															JSON.stringify(userToken)
+														);
+
+														//	Set header for subsequent request
+														setHeaders();
+
+														// change window
+														return history.push(
+															'/dashboard'
+														);
+
+														// (
+														// 	<Redirect
+														// 		to={'dashboard'}
+														// 	/>
+														// );
+													}
+												})
+												.catch((err) => {
+													if (err) {
+														throw err;
+													}
+												});
+											setOpen(false);
 										}
 									}}
 									color='primary'>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import ReactDOM from 'react-dom';
 import { Router, Switch, Route } from 'react-router-dom';
 import { Provider } from 'react-redux';
@@ -13,9 +13,13 @@ import history from './services/history';
 import MyHeader from './components/header';
 import Container from '@material-ui/core/Container';
 import './index.scss';
+import { userContext } from './components/userContext';
 
 // const storage = store();
 function App() {
+	const isAuthenticated =
+		JSON.parse(localStorage.getItem('userToken')) || {};
+
 	return (
 		<>
 			<CssBaseline />
@@ -23,13 +27,22 @@ function App() {
 				<MyHeader />
 				<Switch>
 					<Route path='/' exact component={Landing} />
-					<ProtectedRoute
-						exact
-						path='/annonser'
-						component={Annonser}
-					/>
-					
-					<Route path='/dashboard' component={Dashboard} />
+					<userContext.Provider
+						value={[
+							isAuthenticated.tokenUserName,
+							isAuthenticated.tokenUserEmail,
+						]}>
+						<Route 
+							exact
+							path='/dashboard'
+							component={Dashboard}
+						/>
+						<Route
+							exact
+							path='/annonser'
+							component={Annonser}
+						/>
+					</userContext.Provider>
 				</Switch>
 			</Router>
 		</>
