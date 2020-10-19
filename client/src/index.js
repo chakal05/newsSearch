@@ -29,15 +29,15 @@ function App() {
 					<Route path='/' exact component={Landing} />
 					<userContext.Provider
 						value={[
-							isAuthenticated.tokenUserName,
-							isAuthenticated.tokenUserEmail,
+							`User username is ${isAuthenticated.tokenUserName}`,
+							`User email is ${isAuthenticated.tokenUserEmail}`,
 						]}>
-						<Route 
+						<ProtectedRoute
 							exact
 							path='/dashboard'
 							component={Dashboard}
 						/>
-						<Route
+						<ProtectedRoute
 							exact
 							path='/annonser'
 							component={Annonser}
