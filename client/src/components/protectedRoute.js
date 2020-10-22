@@ -10,8 +10,7 @@ export default function ProtectedRoute(props) {
 	if (isAuthenticated) {
 		return <Route exact path={props.path} component={Component} />;
 	} else {
-		return <Redirect to={'/'} />;
+		
+		return <Redirect to='/' />;
 	}
 }
-
-//history.push('/')

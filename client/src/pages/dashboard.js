@@ -5,15 +5,13 @@ export default function Dashboard() {
 	const msg = useContext(userContext);
 	return (
 		<div>
-			<h1> Dashboard </h1>
+            <div style={{margin:'1rem'}}>
+            <h1 > Dashboard </h1>
             <h3>
-            <ul style={{listStyle:'none'}}>
-            {msg.map((item, index) => {
-                return <li key={index}  > {item} </li>
-            }
-            )} 
-            </ul>
+            <p> User email: {msg.tokenUserEmail} </p>
+            <p> User username: {msg.tokenUserName} </p>
             </h3>
+            </div>
 		</div>
 	);
 }

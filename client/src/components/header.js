@@ -1,9 +1,8 @@
-import React from 'react';
+import React, { createContext } from 'react';
 import axios from 'axios';
 import { NavLink, Redirect } from 'react-router-dom';
 import history from '../services/history';
 import { makeStyles } from '@material-ui/core/styles';
-import Container from '@material-ui/core/Container';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import { Typography } from '@material-ui/core';
@@ -35,14 +34,15 @@ const useStyles = makeStyles((theme) => ({
 	},
 }));
 
+let userInfo;
+export const userContext = createContext(userInfo);
+
 export default function Header() {
 	const classes = useStyles();
 	const [open, setOpen] = React.useState(false);
 	const [email, setEmail] = React.useState('');
 	const [pass, setPass] = React.useState('');
 	const [token, setToken] = React.useState(false);
-	const tokenUserEmail =
-		localStorage.getItem('tokenUserEmail') || '';
 
 	const parseJwt = (token) => {
 		var base64Url = token.split('.')[1];
@@ -81,14 +81,12 @@ export default function Header() {
 							Manedek
 						</NavLink>
 					</Typography>{' '}
-					<h3> {tokenUserEmail && { tokenUserEmail }} </h3>
-					<h3> {tokenUserEmail && { tokenUserEmail }} </h3>
 					<Typography className={classes.addAnnons}>
 						<NavLink
 							className={classes.rightLinks}
 							to='/annonser'>
 							{' '}
-							Lägg in annons{' '}
+							Lägg in annons 
 						</NavLink>
 						<NavLink
 							className={classes.rightLinks}
@@ -201,6 +199,10 @@ export default function Header() {
 															JSON.stringify(userToken)
 														);
 
+														// Save to context
+
+														userInfo = userToken;
+
 														//	Set header for subsequent request
 														setHeaders();
 
@@ -208,12 +210,6 @@ export default function Header() {
 														return history.push(
 															'/dashboard'
 														);
-
-														// (
-														// 	<Redirect
-														// 		to={'dashboard'}
-														// 	/>
-														// );
 													}
 												})
 												.catch((err) => {
