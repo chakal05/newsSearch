@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useEffect, useState } from 'react';
 import ReactDOM from 'react-dom';
 import { Router, Switch, Route } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -9,13 +9,23 @@ import Annonser from './pages/annonser';
 import Dashboard from './pages/dashboard';
 import history from './services/history';
 import MyHeader from './components/header';
-import Container from '@material-ui/core/Container';
+import axios from 'axios';
 // import './index.scss';
-import { userContext } from './components/header';
+import { userContext } from './components/userContext';
 
 function App() {
-	// const isAuthenticated =
-	// 	JSON.parse(localStorage.getItem('userToken')) || {};
+	const [data, setData] = useState('');
+	const getData = async () => {
+		await axios
+			.get('https://swapi.dev/api/people/1/')
+			.then((response) => {
+				setData(response.data);
+			});
+	};
+
+	useEffect(() => {
+		getData();
+	}, []);
 
 	return (
 		<>
@@ -23,9 +33,8 @@ function App() {
 			<Router history={history}>
 				<MyHeader />
 				<Switch>
-					<Route path='/' exact component={Landing} />
-					<userContext.Provider
-						>
+					<userContext.Provider value={data}>
+						<Route path='/' exact component={Landing} />
 						<ProtectedRoute
 							exact
 							path='/dashboard'

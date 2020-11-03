@@ -1,6 +1,6 @@
-import React, { createContext } from 'react';
+import React from 'react';
 import axios from 'axios';
-import { NavLink, Redirect } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import history from '../services/history';
 import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
@@ -33,9 +33,6 @@ const useStyles = makeStyles((theme) => ({
 		color: '#fff',
 	},
 }));
-
-let userInfo;
-export const userContext = createContext(userInfo);
 
 export default function Header() {
 	const classes = useStyles();
@@ -199,9 +196,6 @@ export default function Header() {
 															JSON.stringify(userToken)
 														);
 
-														// Save to context
-
-														userInfo = userToken;
 
 														//	Set header for subsequent request
 														setHeaders();
