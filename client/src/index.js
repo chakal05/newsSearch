@@ -14,10 +14,10 @@ import axios from 'axios';
 import { userContext } from './components/userContext';
 
 function App() {
-	const [data, setData] = useState('');
+	const [data, setData] = useState([]);
 	const getData = async () => {
 		await axios
-			.get('https://swapi.dev/api/people/1/')
+			.get('http://localhost:4000')
 			.then((response) => {
 				setData(response.data);
 			});

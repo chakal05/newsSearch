@@ -1,4 +1,4 @@
-import React, {useContext} from 'react';
+import React, { useContext } from 'react';
 import { userContext } from '../components/userContext';
 import { makeStyles } from '@material-ui/core/styles';
 import pic from '../assets/undraw_pizza_sharing_wxop.svg';
@@ -7,7 +7,6 @@ import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 import { red } from '@material-ui/core/colors';
-
 
 // Page style
 
@@ -28,24 +27,24 @@ const useStyles = makeStyles((theme) => ({
 	postSectionTitle: {
 		textAlign: 'center',
 		padding: '3rem',
-    },
-    card: {
-        maxWidth: 345,
-      },
-      media: {
-        height: 0,
-        paddingTop: '56.25%', // 16:9
-      },
-    
-      avatar: {
-        backgroundColor: red[500],
-      },
+	},
+	card: {
+		maxWidth: 345,
+	},
+	media: {
+		height: 0,
+		paddingTop: '56.25%', // 16:9
+	},
+
+	avatar: {
+		backgroundColor: red[500],
+	},
 }));
 
 function Landing() {
 	const classes = useStyles();
-    const data = useContext(userContext);
-   const {name, birth_year, gender, height, hair_color,} = data;
+	const data = useContext(userContext);
+
 	return (
 		<div className={classes.root}>
 			<section className={classes.landing}>
@@ -74,33 +73,54 @@ function Landing() {
 						item
 						xs={12}
 						className={classes.postSectionTitle}>
-						<h1> Star wars api</h1>
+						<h1> Our first subscribers </h1>
 					</Grid>
 					<Grid container justify='center'>
-                    <Grid item xs={4} style={{textAlign:'center'}}>
-                    {
-                        <Card className={classes.root} variant="outlined">
-                        <CardContent>
-                          <Typography className={classes.title} color="textSecondary" gutterBottom>
-                           Today's character
-                          </Typography>
-                          <Typography variant="h5" component="h2">
-                          Name:  {name }
-                          </Typography>
-                          <Typography className={classes.pos} color="textSecondary">
-                            Gender: {gender}
-                          </Typography>
-                          <Typography variant="body2" component="p">
-                            Height: {height}
-                            <br />
-                            Hair color : {hair_color}
-                            <br/>
-                            birth year: {birth_year}
-                          </Typography>
-                        </CardContent>
-                      </Card>
-                    } 
-                    </Grid>
+						{data.map((item) => (
+							<Grid
+								item
+								xs={3}
+								style={{
+									textAlign: 'center',
+									margin: '.5rem',
+								}}>
+								<Card
+									className={classes.root}
+									variant='outlined'>
+									<CardContent>
+										<Typography
+											className={classes.title}
+											color='textSecondary'
+											gutterBottom>
+											Id number: {item.id}
+										</Typography>
+										<Typography variant='h5' component='h2'>
+											Firstname: {item.first_name}
+										</Typography>
+										<Typography
+											className={classes.pos}
+											color='textSecondary'>
+											Lastname: {item.last_name}
+										</Typography>
+										<Typography
+											variant='body2'
+											component='p'>
+											Gender: {item.gender}
+										</Typography>
+										<Typography
+											variant='body2'
+											component='p'>
+											Email : {item.email}
+										</Typography>
+										<Typography
+											variant='body2'
+											component='p'>
+											Ip address: {item.ip_address}
+										</Typography>
+									</CardContent>
+								</Card>
+							</Grid>
+						))}
 					</Grid>
 				</Grid>
 			</section>
@@ -111,8 +131,8 @@ function Landing() {
 						xs={12}
 						className={classes.postSectionTitle}>
 						{
-                            //<h1>Tusentals potentiella rumskompisar</h1>
-                        }
+							//<h1>Tusentals potentiella rumskompisar</h1>
+						}
 					</Grid>
 				</Grid>
 			</section>
