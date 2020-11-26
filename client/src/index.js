@@ -17,7 +17,7 @@ function App() {
 	const [data, setData] = useState([]);
 	const getData = async () => {
 		await axios
-			.get('http://localhost:4000')
+			.get('http://localhost:4000/articles')
 			.then((response) => {
 				setData(response.data);
 			});
