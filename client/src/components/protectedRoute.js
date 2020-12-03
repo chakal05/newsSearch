@@ -1,16 +1,14 @@
 import React from 'react';
 import { Redirect, Route } from 'react-router-dom';
 
-//import history from '../services/history';
-
 export default function ProtectedRoute(props) {
 	const Component = props.component;
-	const isAuthenticated = true // localStorage.getItem('userToken');
+	
 
-	if (isAuthenticated) {
+	if (JSON.parse(localStorage.getItem('userToken'))) {
 		return <Route exact path={props.path} component={Component} />;
 	} else {
-		
+		alert('You need to login first');
 		return <Redirect to='/' />;
 	}
 }

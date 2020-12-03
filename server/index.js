@@ -20,10 +20,34 @@ app.use(
 // Helmet middleware
 app.use(helmet());
 
-// Handle routes 
+// Check for headers
+
+const auth = function (req, res, next) {
+	console.log(req.headers.authorization);
+	if (!req.headers.authorization)
+		return res.status(403).json({ error: 'No credentials sent!' });
+	return next();
+};
+
+// Handle routes
 const articles = require('./routes/articles');
-app.use('/articles', articles);
+const users = require('./routes/users');
+app.use('/articles', auth, articles);
+app.use('/users', users);
+
+process.env.NODE_ENV = 'development';
+
+//Static folder
+
+app.use(express.static(__dirname + '/public/'));
+
+// SPA
+
+app.get(/.*/, (req, res) =>
+	res.sendFile(__dirname + '/public/index.html')
+);
 
 // Port
 const port = process.env.port || 4000;
-app.listen(port, () => console.log('APP RUNNING ON PORT 4000'));
+
+app.listen(port, () => console.log(`App listening on port ${port}!`));

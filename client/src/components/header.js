@@ -1,7 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import axios from 'axios';
 import { NavLink } from 'react-router-dom';
-import history from '../services/history';
 import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
@@ -12,17 +11,19 @@ import Dialog from '@material-ui/core/Dialog';
 import DialogActions from '@material-ui/core/DialogActions';
 import DialogContent from '@material-ui/core/DialogContent';
 import DialogTitle from '@material-ui/core/DialogTitle';
+import '../styles/header.scss';
 
 const useStyles = makeStyles((theme) => ({
 	root: {
 		marginBottom: '-4rem',
 	},
 	appBar: {
-		background: '#7277FE',
+		background: '#FAFAFA',
 	},
 	logo: {
 		flexGrow: 1,
-		color: '#fff',
+		fontSize: '1.3rem',
+		color: '#000',
 	},
 	addAnnons: {
 		//
@@ -30,16 +31,17 @@ const useStyles = makeStyles((theme) => ({
 
 	rightLinks: {
 		marginRight: theme.spacing(1),
-		color: '#fff',
+		color: '#000',
 	},
 }));
 
-export default function Header() {
+export default function Header(props) {
 	const classes = useStyles();
-	const [open, setOpen] = React.useState(false);
-	const [email, setEmail] = React.useState('');
-	const [pass, setPass] = React.useState('');
-	const [token, setToken] = React.useState(false);
+	const [open, setOpen] = useState(false);
+	const [email, setEmail] = useState('');
+	const [pass, setPass] = useState('');
+	const [register, setRegister] = useState(false);
+	const [error, setError] = useState('');
 
 	const parseJwt = (token) => {
 		var base64Url = token.split('.')[1];
@@ -59,10 +61,10 @@ export default function Header() {
 	};
 
 	const setHeaders = () => {
-		if (localStorage.getItem('userToken')) {
+		if (JSON.parse(localStorage.getItem('userToken'))) {
 			axios.defaults.headers.common[
 				'authorization'
-			] = localStorage.getItem('userToken');
+			] = JSON.parse(localStorage.getItem('userToken'));
 		}
 	};
 
@@ -75,38 +77,35 @@ export default function Header() {
 				<Toolbar>
 					<Typography className={classes.logo}>
 						<NavLink className={classes.logo} to='/'>
-							Manedek
+							SasMiya
 						</NavLink>
 					</Typography>{' '}
 					<Typography className={classes.addAnnons}>
 						<NavLink
 							className={classes.rightLinks}
-							to='/annonser'>
-							{' '}
-							Lägg in annons 
-						</NavLink>
-						<NavLink
-							className={classes.rightLinks}
 							to='/dashboard'>
 							{' '}
-							Dashboard{' '}
+							Saved news{' '}
 						</NavLink>
-						{
-							//? Should disappear when user is logged in
-						}
 
 						<Button
 							className={classes.rightLinks}
+							variant='text'
 							onClick={() => {
-								if (!token) {
+								if (
+									!JSON.parse(
+										localStorage.getItem('userToken')
+									)
+								) {
 									setOpen(true);
 								} else {
-									setToken(false);
 									localStorage.removeItem('userToken');
-									return history.push('/');
+									return (window.location.href = '/');
 								}
 							}}>
-							{token ? 'logout' : 'login'}
+							{JSON.parse(localStorage.getItem('userToken'))
+								? 'logout'
+								: 'login'}
 						</Button>
 
 						<Dialog
@@ -116,108 +115,208 @@ export default function Header() {
 							}}
 							aria-labelledby='form-dialog-title'>
 							<DialogTitle id='form-dialog-title'>
-								Login
+								<Button
+									onClick={() => setRegister(false)}
+									variant='text'>
+									{' '}
+									Login{' '}
+								</Button>
+								<Button
+									variant='text'
+									onClick={() => setRegister(true)}>
+									{' '}
+									Register{' '}
+								</Button>
 							</DialogTitle>
-							<DialogContent>
-								<TextField
-									autoFocus
-									margin='dense'
-									name='email'
-									label='Email Address'
-									type='email'
-									fullWidth
-									onChange={(e) => {
-										setEmail(e.target.value.trim());
-									}}
-								/>
-								<TextField
-									//	error={val || false}
+							{!register && (
+								<>
+									{' '}
+									<DialogContent>
+										<TextField
+											autoFocus
+											margin='dense'
+											name='email'
+											label='Email Address'
+											type='email'
+											fullWidth
+											onChange={(e) => {
+												setEmail(e.target.value.trim());
+											}}
+										/>
+										<TextField
+											//	error={val || false}
 
-									margin='dense'
-									name='pass'
-									label='Password'
-									type='password'
-									fullWidth
-									//helperText='Incorrect entry.'
-									onChange={(e) => {
-										setPass(e.target.value.trim());
-									}}
-								/>
-							</DialogContent>
-							<DialogActions>
-								<Button
-									onClick={() => {
-										setOpen(false);
-									}}
-									color='primary'>
-									Cancel
-								</Button>
-								<Button
-									onClick={async () => {
-										// User login
+											margin='dense'
+											name='pass'
+											label='Password'
+											type='password'
+											style={{ marginBottom: '2rem' }}
+											fullWidth
+											onChange={(e) => {
+												setPass(e.target.value.trim());
+											}}
+										/>
+										{error && (
+											<Typography
+												color='secondary'
+												variant='subtitle2'>
+												{error}
+											</Typography>
+										)}
 
-										if (email && pass) {
-											await axios
-												.get('/users', {
-													params: {
-														email: email,
-														password: pass,
-													},
-												})
-												.then((response) => {
-													if (response.status === 200) {
-														// Get token
-														const token =
-															response.data
-																.accessToken;
+										<br />
 
-														// Decode token
-														const decoded = parseJwt(
-															token
-														);
+										<Typography variant='subtitle2'>
+											Don't have an account? Register,
+											please{' '}
+										</Typography>
+									</DialogContent>
+									<DialogActions>
+										<Button
+											onClick={() => {
+												setOpen(false);
+											}}
+											color='primary'>
+											Cancel
+										</Button>
+										<Button
+											onClick={async () => {
+												// User login
 
-														setToken(true);
+												if (email && pass) {
+													await axios
+														.get('/users', {
+															params: {
+																email: email,
+																password: pass,
+															},
+														})
+														.then((response) => {
+															if (
+																response.status ===
+																200
+															) {
+																// Get token
+																const token =
+																	response.data
+																		.accessToken;
 
-														//	Save token in an object
+																// Decode token
+																const decoded = parseJwt(
+																	token
+																);
 
-														const userToken = {
-															accessToken: token,
-															tokenUserName:
-																decoded.username,
-															tokenUserId: decoded._id,
-															tokenUserProfil:
-																decoded.profil,
-															tokenUserEmail:
-																decoded.email,
-														};
-														// Save object in localStorage
-														localStorage.setItem(
-															'userToken',
-															JSON.stringify(userToken)
-														);
+																//	Save token in an object
 
+																const userToken = {
+																	accessToken: token,
+																	tokenUserId:
+																		decoded.id,
+																	tokenUserEmail:
+																		decoded.email,
+																};
+																// Save object in localStorage
+																localStorage.setItem(
+																	'userToken',
+																	JSON.stringify(
+																		userToken
+																	)
+																);
 
-														//	Set header for subsequent request
-														setHeaders();
+																//	Set header for subsequent request
+																setHeaders();
 
-														// change window
-														return history.push(
-															'/dashboard'
-														);
-													}
-												})
-												.catch((err) => {
-													if (err) {
-														throw err;
-													}
-												});
-											setOpen(false);
-										}
-									}}
-									color='primary'>
-									Login
-								</Button>
-							</DialogActions>
+																// change window
+																return setOpen(false);
+															}
+														})
+														.catch((err) => {
+															if (err) {
+																setError(
+																	'Something went wrong. Please, check again'
+																);
+															}
+														});
+												} else {
+													setError(
+														'Email and password must be provided'
+													);
+												}
+											}}
+											color='primary'>
+											Login
+										</Button>
+									</DialogActions>{' '}
+								</>
+							)}
+							{register && (
+								<>
+									{' '}
+									<DialogContent>
+										<TextField
+											autoFocus
+											margin='dense'
+											name='email'
+											label='Email Address'
+											type='email'
+											fullWidth
+											onChange={(e) => {
+												setEmail(e.target.value.trim());
+											}}
+										/>
+										<TextField
+											//	error={val || false}
+
+											margin='dense'
+											name='pass'
+											label='Password'
+											type='password'
+											style={{ marginBottom: '2rem' }}
+											fullWidth
+											onChange={(e) => {
+												setPass(e.target.value.trim());
+											}}
+										/>
+									</DialogContent>
+									<DialogActions>
+										<Button
+											onClick={() => {
+												setOpen(false);
+											}}
+											color='primary'>
+											Cancel
+										</Button>
+										<Button
+											onClick={async () => {
+												// User login
+
+												if (email && pass) {
+													await axios
+														.post('/users', {
+															email: email,
+															password: pass,
+														})
+														.then((response) => {
+															if (
+																response.status ===
+																200
+															) {
+																setRegister(false);
+															}
+														})
+														.catch((err) => {
+															if (err) {
+																throw err;
+															}
+														});
+												}
+											}}
+											color='primary'>
+											Login
+										</Button>
+									</DialogActions>{' '}
+								</>
+							)}
 						</Dialog>
 					</Typography>
 				</Toolbar>
