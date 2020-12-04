@@ -61,10 +61,10 @@ export default function Header(props) {
 	};
 
 	const setHeaders = () => {
-		if (JSON.parse(localStorage.getItem('userToken'))) {
-			axios.defaults.headers.common[
-				'authorization'
-			] = JSON.parse(localStorage.getItem('userToken'));
+		const token = JSON.parse(localStorage.getItem('userToken'))
+			.accessToken;
+		if (token) {
+			axios.defaults.headers.common['authorization'] = token;
 		}
 	};
 
@@ -233,7 +233,8 @@ export default function Header(props) {
 														.catch((err) => {
 															if (err) {
 																setError(
-																	'Something went wrong. Please, check again'
+																	`Something went wrong with your credentials.
+                                                                     Please, check again`
 																);
 															}
 														});
@@ -301,6 +302,9 @@ export default function Header(props) {
 																response.status ===
 																200
 															) {
+																alert(
+																	'Account created'
+																);
 																setRegister(false);
 															}
 														})

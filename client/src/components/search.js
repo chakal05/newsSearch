@@ -6,11 +6,14 @@ import { connect } from 'react-redux';
 import '../styles/search.scss';
 
 function Search(props) {
+	const corsProxyUrl = 'https://cors-anywhere.herokuapp.com/';
+
+	const key = process.env.REACT_APP_NEWS_KEY;
 	const [query, setQuery] = useState('');
 	const getData = async () => {
 		await axios
 			.get(
-				`https://newsapi.org/v2/everything?q=${query}&apiKey=475f0cef461f4621bb12a738b586e83d`
+				`${corsProxyUrl}https://newsapi.org/v2/everything?q=${query}&apiKey=${key}`
 			)
 			.then((response) => {
 				props.dispatch(searchResult(response.data.articles));

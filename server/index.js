@@ -23,7 +23,6 @@ app.use(helmet());
 // Check for headers
 
 const auth = function (req, res, next) {
-	console.log(req.headers.authorization);
 	if (!req.headers.authorization)
 		return res.status(403).json({ error: 'No credentials sent!' });
 	return next();
@@ -37,17 +36,19 @@ app.use('/users', users);
 
 process.env.NODE_ENV = 'development';
 
-//Static folder
+if (process.env.NODE_ENV === 'production') {
+	//Static folder
 
-app.use(express.static(__dirname + '/public/'));
+	app.use(express.static(__dirname + '/public/'));
 
-// SPA
+	// SPA
 
-app.get(/.*/, (req, res) =>
-	res.sendFile(__dirname + '/public/index.html')
-);
+	app.get(/.*/, (req, res) =>
+		res.sendFile(__dirname + '/public/index.html')
+	);
+}
 
 // Port
-const port = process.env.port || 4000;
+const port = process.env.port || 5000;
 
 app.listen(port, () => console.log(`App listening on port ${port}!`));
