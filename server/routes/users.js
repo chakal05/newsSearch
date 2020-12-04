@@ -34,7 +34,6 @@ async function loadUsers() {
 // add User
 
 router.post('/', async function (req, res) {
-
 	const hashed = bcrypt.hashSync(req.body.password, salt);
 
 	let payload = {
@@ -52,7 +51,6 @@ router.post('/', async function (req, res) {
 			.send(`Message from db: Inserted a new row`);
 	});
 });
-
 
 router.get('/', async function (req, res) {
 	const query = await loadUsers();
@@ -82,46 +80,6 @@ router.get('/', async function (req, res) {
 			return res.status(404).send('Email or password incorrect');
 		}
 	}
-});
-
-router.get('/:id', async function (req, res) {
-	const query = await loadUsers();
-	query
-		.find({ _id: req.query.id }, (error, messages) => {
-			if (error) return res.status(500).send(error);
-			return res.status(200).send(messages);
-		})
-		.catch((err) => {
-			throw err;
-		});
-});
-
-router.put('/:id', async function (req, res) {
-	const query = await loadUsers();
-	const update = {
-		userToRead: 'yes',
-	};
-	await query.findByIdAndUpdate(
-		req.body.id,
-		update,
-		{ new: true, upsert: true },
-
-		(err) => {
-			if (err) return res.status(500).send(err);
-			return res.status(200).send('updated message status');
-		}
-	);
-});
-
-// delete Message
-
-router.delete('/', async function (req, res) {
-	id = req.body.id;
-	let query = await loadUsers();
-	query.findByIdAndRemove(id, (err, doc) => {
-		if (err) return res.status(500).send(err);
-		return res.status(200).send(`Deleted one item`);
-	});
 });
 
 module.exports = router;

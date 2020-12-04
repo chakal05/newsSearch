@@ -16,14 +16,15 @@ export default function NewsList(props) {
 		<div>
 			<List className='root'>
 				{props.data.map((item) => {
+					const image = item.image.url || item.image;
 					return (
 						<>
-							<ListItem alignItems='flex-start' key={item.url}>
+							<ListItem alignItems='flex-start' key={item.id}>
 								<ListItemAvatar>
 									<Avatar
 										className='avatar'
 										alt='Remy Sharp'
-										src={`${item.urlToImage}`}
+										src={`${image}`}
 									/>
 								</ListItemAvatar>
 								<a
@@ -39,7 +40,9 @@ export default function NewsList(props) {
 													variant='body2'
 													className='inline'
 													color='textPrimary'>
-													{item.author}
+													{props.action === 0
+														? item.provider
+														: item.provider.name}
 												</Typography>{' '}
 												<br />
 												<Typography
@@ -50,8 +53,11 @@ export default function NewsList(props) {
 													{item.description}
 												</Typography>{' '}
 												<br />
-												{item.content}
-												<br />
+												{`${item.datePublished
+													.split('T')
+													.shift()} at ${item.datePublished
+													.split('T')
+													.pop()}`}
 											</React.Fragment>
 										}
 									/>
@@ -66,15 +72,17 @@ export default function NewsList(props) {
 												await axios
 													.post('/articles', {
 														user: token.tokenUserId,
+														id: item.id,
 														title: item.title,
 														description:
 															item.description,
-														content: item.content,
+														body: item.body,
 														url: item.url,
-														image: item.image,
-														author: item.author,
-														pubilshedAt:
-															item.pubilshedAt,
+														image: item.image.url,
+														provider:
+															item.provider.name,
+														datePublished:
+															item.datePublished,
 													})
 													.then((response) => {
 														alert(response.data);

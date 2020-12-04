@@ -17,14 +17,15 @@ db.on('error', console.error.bind(console, 'connection error:'));
 // post schema
 
 const articleSchema = new mongoose.Schema({
+    id:String,
 	user: String,
 	title: String,
 	description: String,
-	content: String,
+	body: String,
 	url: String,
 	image: String,
-	author: String,
-	pubilshedAt: String,
+	provider: String,
+	datePublished: String,
 });
 
 async function loadPosts() {
@@ -36,21 +37,22 @@ async function loadPosts() {
 
 router.post('/', async function (req, res) {
 	const payload = {
+        id: req.body.id,
 		user: req.body.user,
 		title: req.body.title,
 		description: req.body.description,
-		content: req.body.content,
+		body: req.body.body,
 		url: req.body.url,
 		image: req.body.image,
-		author: req.body.author,
-		pubilshedAt: req.body.pubilshedAt,
+		provider: req.body.provider,
+		datePublished: req.body.datePublished,
 	};
 
 	const query = await loadPosts();
 	const newArticle = new query(payload);
 	newArticle.save((err) => {
-		if (err) return res.sendStatus(500).send(err);
-		return res.status(200).send(`Saved item`);
+		if (err) return res.status(500).send(err);
+		return res.status(200).send('New item saved');
 	});
 });
 
@@ -63,7 +65,7 @@ router.get('/', async function (req, res) {
 
 	query
 		.find({ user: req.query.user }, (error, posts) => {
-			if (error) return res.status(404).send(error);
+			if (error) return res.status(404).send(err);
 			return res.status(200).send(posts);
 		})
 		.catch((err) => {
@@ -74,12 +76,11 @@ router.get('/', async function (req, res) {
 // delete article
 
 router.delete('/', async function (req, res) {
-	
 	id = req.body.id;
 	let query = await loadPosts();
 	query.findByIdAndRemove(id, (err, doc) => {
-		if (err) return res.status(500).send(err);
-		return res.status(200).send(`Deleted item`);
+		if (err) return res.status(500);
+		return res.status(200).send('Item deleted');
 	});
 });
 
