@@ -12,6 +12,7 @@ import DialogActions from '@material-ui/core/DialogActions';
 import DialogContent from '@material-ui/core/DialogContent';
 import DialogTitle from '@material-ui/core/DialogTitle';
 import '../styles/header.scss';
+import logo from '../assets/sasmiyaLogo.png';
 
 const useStyles = makeStyles((theme) => ({
 	root: {
@@ -20,10 +21,15 @@ const useStyles = makeStyles((theme) => ({
 	appBar: {
 		background: '#FAFAFA',
 	},
+	tool: {
+        height: '100px',
+		border: '1px solid',
+	},
 	logo: {
 		flexGrow: 1,
-		fontSize: '1.3rem',
-		color: '#000',
+		//	fontSize: '1.3rem',
+        color: '#000',
+        marginTop:'.6rem'
 	},
 	addAnnons: {
 		//
@@ -74,10 +80,10 @@ export default function Header(props) {
 				className={classes.appBar}
 				position='static'
 				elevation={0}>
-				<Toolbar>
+				<Toolbar className={classes.tool}>
 					<Typography className={classes.logo}>
-						<NavLink className={classes.logo} to='/'>
-							SasMiya
+						<NavLink to='/'>
+							<img src={logo} alt='logo' />
 						</NavLink>
 					</Typography>{' '}
 					<Typography className={classes.addAnnons}>

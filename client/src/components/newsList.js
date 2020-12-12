@@ -16,7 +16,9 @@ export default function NewsList(props) {
 		<div>
 			<List className='root'>
 				{props.data.map((item) => {
-					const image = item.image.url || item.image;
+					const image = item.image.url
+						? item.image.url
+						: item.image;
 					return (
 						<>
 							<ListItem alignItems='flex-start' key={item.id}>
@@ -24,7 +26,7 @@ export default function NewsList(props) {
 									<Avatar
 										className='avatar'
 										alt='Remy Sharp'
-										src={`${image}`}
+										src={image}
 									/>
 								</ListItemAvatar>
 								<a

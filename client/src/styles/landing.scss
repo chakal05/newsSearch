@@ -1,0 +1,18 @@
+.landing {
+	height: 93.3vh;
+	padding: 70px 0;
+
+	.container {
+		.box {
+			.topTxt {
+				margin-top: 9rem;
+				font-size: 4rem;
+                margin-bottom: 2rem;
+                
+                @media screen and (max-width: 600px) {
+                    margin-top: 3rem;
+                }
+			}
+		}
+	}
+}

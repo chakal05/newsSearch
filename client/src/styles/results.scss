@@ -1,16 +1,18 @@
-
 .root {
-    .searchBox{
-        margin-left: 2rem;
-
-        .progress{
-            margin-top: .4rem;
-        }
-    }
-    .list{
-        width: 50%;
-        @media screen and (max-width: 768px) {
-            width: 100% !important;
-        }
-    }
+	.searchBox {
+		text-align: center;
+        margin-bottom: 2rem;
+		@media screen and (max-width: 900px) {
+			margin: 2rem 0;
+		}
+		.progress {
+			margin-top: 0.4rem;
+		}
+	}
+	.list {
+		width: 70%;
+		@media screen and (max-width: 900px) {
+			width: 100% !important;
+		}
+	}
 }

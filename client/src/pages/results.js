@@ -7,7 +7,7 @@ import '../styles/results.scss';
 function Results(props) {
 	return (
 		<div className='root'>
-			<Grid container>
+			<Grid container justify='center'>
             <Grid item xs={12} className='searchBox'>
 					<Search
 						onSubmit={() => {
