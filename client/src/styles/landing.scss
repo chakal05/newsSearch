@@ -1,18 +1,26 @@
 .landing {
-	height: 93.3vh;
+//	height: 93.3vh;
 	padding: 70px 0;
 
 	.container {
 		.box {
-			.topTxt {
-				margin-top: 9rem;
-				font-size: 4rem;
-                margin-bottom: 2rem;
-                
+			.logo{
+                margin-top: 5rem;
+
                 @media screen and (max-width: 600px) {
                     margin-top: 3rem;
                 }
-			}
+                .topTxt {
+                    font-size: 3rem;
+                    margin-top: .5rem;
+                    margin-bottom: 2rem;
+                }
+
+                .imag{
+                    height: 150px;
+                    width: 150px;
+                }
+            }
 		}
 	}
 }

@@ -10,7 +10,6 @@ import Landing from './pages/landing';
 import Results from './pages/results';
 import Dashboard from './pages/dashboard';
 import history from './services/history';
-import MyHeader from './components/header';
 import './index.scss';
 
 const storage = store();
@@ -20,7 +19,6 @@ function App() {
 		<Provider store={storage}>
 			<CssBaseline />
 			<Router history={history}>
-				<MyHeader />
 				<Switch>
 						<Route path='/' exact component={Landing} />
 						<Route path='/results' exact component={Results} />

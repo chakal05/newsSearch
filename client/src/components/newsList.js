@@ -55,7 +55,7 @@ export default function NewsList(props) {
 													{item.description}
 												</Typography>{' '}
 												<br />
-												{`${item.datePublished
+												{`Published:  ${item.datePublished
 													.split('T')
 													.shift()} at ${item.datePublished
 													.split('T')

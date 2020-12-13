@@ -54,7 +54,7 @@ function Search(props) {
 				props.onSubmit();
 			}}>
 			<TextField
-				placeholder={`Search with key words, like 'Bitcoin'`}
+				placeholder={`Search ...`}
 				className='userInput'
 				variant='outlined'
 				onChange={(e) => {
@@ -68,7 +68,7 @@ function Search(props) {
                     )
                 }}
                 >
-                <FontAwesomeIcon color='secondary' icon={faSearch} />
+              
             </TextField>
            
 		</form>

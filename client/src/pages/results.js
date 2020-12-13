@@ -1,19 +1,17 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import NewsList from '../components/newsList';
-import Search from '../components/search';
 import { Grid, LinearProgress } from '@material-ui/core';
 import '../styles/results.scss';
+import MyHeader from '../components/header';
 function Results(props) {
 	return (
-		<div className='root'>
-			<Grid container justify='center'>
+        <div className='root'>
+       <div style={{marginBottom: '3rem'}}>
+       <MyHeader show={1} />
+       </div>
+			<Grid container >
             <Grid item xs={12} className='searchBox'>
-					<Search
-						onSubmit={() => {
-							//
-						}}
-                    />
                   {!props.results[0] && <LinearProgress className='progress'/>}  
                 </Grid>
                 <Grid item className='list'>
