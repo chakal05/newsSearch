@@ -381,7 +381,7 @@ export default function Header(props) {
 													}
 												}}
 												color='primary'>
-												Login
+												Register
 											</Button>
 										</DialogActions>{' '}
 									</div>
