@@ -1,15 +1,19 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { NavLink } from 'react-router-dom';
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
-import { Typography, Menu, MenuItem } from '@material-ui/core';
-import Button from '@material-ui/core/Button';
-import TextField from '@material-ui/core/TextField';
-import Dialog from '@material-ui/core/Dialog';
-import DialogActions from '@material-ui/core/DialogActions';
-import DialogContent from '@material-ui/core/DialogContent';
-import DialogTitle from '@material-ui/core/DialogTitle';
+import {
+	AppBar,
+	Toolbar,
+	Button,
+	Dialog,
+	TextField,
+	Typography,
+	Menu,
+	MenuItem,
+	DialogTitle,
+	DialogContent,
+	DialogActions,
+} from '@material-ui/core';
 import '../styles/header.scss';
 import Search from '../components/search';
 import logo from '../assets/sasmiyaLogo.png';
@@ -22,7 +26,6 @@ export default function Header(props) {
 	const [pass, setPass] = useState('');
 	const [register, setRegister] = useState(false);
 	const [error, setError] = useState('');
-
 	const [anchorEl, setAnchorEl] = useState(null);
 
 	const handleClick = (event) => {
@@ -105,31 +108,31 @@ export default function Header(props) {
 								onClose={handleClose}>
 								<MenuItem onClick={() => {}}>
 									<NavLink
-										style={{color:'#000'}}
+										style={{ color: '#000' }}
 										to='/dashboard'>
 										{' '}
 										SAVED NEWS{' '}
 									</NavLink>
 								</MenuItem>
-								
-								<MenuItem onClick={() => {
-									if (
-										!JSON.parse(
-											localStorage.getItem('userToken')
-										)
-									) {
-										setOpen(true);
-									} else {
-										localStorage.removeItem('userToken');
-										return (window.location.href = '/');
-									}
-								}}>
-                                
-								{JSON.parse(localStorage.getItem('userToken'))
-									? 'LOGOUT'
-									: 'LOGIN'}
-							
 
+								<MenuItem
+									onClick={() => {
+										if (
+											!JSON.parse(
+												localStorage.getItem('userToken')
+											)
+										) {
+											setOpen(true);
+										} else {
+											localStorage.removeItem('userToken');
+											return (window.location.href = '/');
+										}
+									}}>
+									{JSON.parse(
+										localStorage.getItem('userToken')
+									)
+										? 'LOGOUT'
+										: 'LOGIN'}
 								</MenuItem>
 							</Menu>
 						</div>
@@ -140,12 +143,12 @@ export default function Header(props) {
 								SAVED NEWS{' '}
 							</NavLink>
 							<Button
-                                style={{
-                                    color:'#000',
-                                    marginTop:'-1px',
-                                    marginLeft:'5px'
-                                }}
-                                size='large'
+								style={{
+									color: '#000',
+									marginTop: '-1px',
+									marginLeft: '5px',
+								}}
+								size='large'
 								variant='text'
 								className='loginBtn'
 								onClick={() => {

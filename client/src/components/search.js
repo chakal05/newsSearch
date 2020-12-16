@@ -7,11 +7,6 @@ import '../styles/search.scss';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 function Search(props) {
-	//   axios.request(options).then(function (response) {
-	//     console.log(response.data);
-	// }).catch(function (error) {
-	//     console.error(error);
-	// });
 
 	const key = process.env.REACT_APP_NEWS_KEY;
 	const [query, setQuery] = useState('');

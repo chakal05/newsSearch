@@ -17,7 +17,7 @@ db.on('error', console.error.bind(console, 'connection error:'));
 // post schema
 
 const articleSchema = new mongoose.Schema({
-    id:String,
+	id: String,
 	user: String,
 	title: String,
 	description: String,
@@ -36,16 +36,28 @@ async function loadPosts() {
 // add article
 
 router.post('/', async function (req, res) {
+	const {
+		id,
+		user,
+		title,
+		description,
+		body,
+		url,
+		image,
+		provider,
+		datePublished,
+	} = req.body;
+
 	const payload = {
-        id: req.body.id,
-		user: req.body.user,
-		title: req.body.title,
-		description: req.body.description,
-		body: req.body.body,
-		url: req.body.url,
-		image: req.body.image,
-		provider: req.body.provider,
-		datePublished: req.body.datePublished,
+		id: id,
+		user: user,
+		title: title,
+		description: description,
+		body: body,
+		url: url,
+		image: image,
+		provider: provider,
+		datePublished: datePublished,
 	};
 
 	const query = await loadPosts();

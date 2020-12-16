@@ -1,5 +1,3 @@
-const express = require('express');
-const router = express.Router();
 const mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost/coloc', {
 	useNewUrlParser: true,
