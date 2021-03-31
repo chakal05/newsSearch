@@ -1,6 +1,6 @@
 import React from 'react';
 import Typography from '@material-ui/core/Typography';
-import axios from 'axios';
+import Avat from  '../assets/image.png';
 import {
 	List,
 	ListItem,
@@ -18,7 +18,7 @@ export default function NewsList(props) {
 				{props.data.map((item) => {
 					const image = item.image.url
 						? item.image.url
-						: item.image;
+						: Avat;
 					return (
 						<>
 							<ListItem alignItems='flex-start' key={item.id}>
@@ -42,6 +42,7 @@ export default function NewsList(props) {
 													variant='body2'
 													className='inline'
 													color='textPrimary'>
+													Source:{' '}
 													{props.action === 0
 														? item.provider
 														: item.provider.name}
@@ -64,55 +65,6 @@ export default function NewsList(props) {
 										}
 									/>
 								</a>
-								<Button
-									onClick={async () => {
-										const token = JSON.parse(
-											localStorage.getItem('userToken')
-										);
-										if (token) {
-											if (props.action === 1) {
-												await axios
-													.post('/articles', {
-														user: token.tokenUserId,
-														id: item.id,
-														title: item.title,
-														description:
-															item.description,
-														body: item.body,
-														url: item.url,
-														image: item.image.url,
-														provider:
-															item.provider.name,
-														datePublished:
-															item.datePublished,
-													})
-													.then((response) => {
-														alert(response.data);
-													})
-													.catch((err) => {
-														throw err;
-													});
-											} else {
-												await axios
-													.delete('/articles', {
-														data: {
-															id: item._id,
-														},
-													})
-													.then((response) => {
-														alert(response.data);
-														props.refresh();
-													})
-													.catch((err) => {
-														throw err;
-													});
-											}
-										} else {
-											alert('You need to login first');
-										}
-									}}>
-									{props.action === 1 ? 'Save' : 'Delete'}
-								</Button>
 
 								<Button hidden value={props.action} />
 							</ListItem>

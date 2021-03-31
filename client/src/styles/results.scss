@@ -1,13 +1,16 @@
 .root {
 	.searchBox {
 		.progress {
-			margin-top: 0.4rem;
+            margin-top: 0.4rem;
 		}
 	}
 	.list {
-		width: 50%;
+        width: 43%;
+        margin-top: 1rem;
+        padding-left: 7rem;
 		@media screen and (max-width: 900px) {
 			width: 100% !important;
 		}
 	}
 }
+ 

@@ -1,6 +1,6 @@
 a {
-	text-decoration: none;
-	//  color: #000;
+    text-decoration: none;
+    color: green;
 }
 
 .root {
@@ -13,25 +13,7 @@ a {
 				margin-top: 0.2rem;
 			}
 
-			.rightPart {
-				.bars {
-					display: none;
-					@media screen and (max-width: 900px) {
-                        display: block;
-                        
-					}
-				
-				}
-
-				.default {
-					@media screen and (max-width: 900px) {
-						display: none;
-					}
-					.rightLinks {
-						color: #000;
-					}
-				}
-			}
 		}
 	}
 }
+ 
