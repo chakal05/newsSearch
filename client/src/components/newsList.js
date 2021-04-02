@@ -8,20 +8,19 @@ import {
 	Avatar,
 	ListItemText,
 	Divider,
-	Button,
 } from '@material-ui/core';
 
 export default function NewsList(props) {
 	return (
-		<div>
-			<List className='root'>
+		<>
+			<List className='main'>
 				{props.data.map((item) => {
 					const image = item.image.url
 						? item.image.url
 						: Avat;
 					return (
-						<>
-							<ListItem alignItems='flex-start' key={item.id}>
+						<div key={item.id} >
+							<ListItem alignItems='flex-start' >
 								<ListItemAvatar>
 									<Avatar
 										className='avatar'
@@ -66,14 +65,13 @@ export default function NewsList(props) {
 									/>
 								</a>
 
-								<Button hidden value={props.action} />
 							</ListItem>
 
 							<Divider variant='inset' component='li' />
-						</>
+						</div>
 					);
 				})}
 			</List>
-		</div>
+		</>
 	);
 }

@@ -1,19 +1,37 @@
 a {
-    text-decoration: none;
-    color: green;
+	text-decoration: none;
+	color: green;
 }
 
-.root {
+.main {
 	margin-bottom: -4rem;
 	.appBar {
 		background-color: #fafafa;
 		.toolB {
-			.logo {
-				flex-grow: 1;
-				margin-top: 0.2rem;
+			.title {
+				color: #539b1e;
+				
+				@media screen and (max-width: 375px) {
+					font-size: 1.5rem;
+				}
 			}
+			.logo {
+				height: 60px;
+				width: 60px;
+				margin-right: 1rem;
+				@media screen and (max-width: 375px) {
+                    height: 35px;
+                    width: 35px;
+                    margin-top: .5rem;	
+                    margin-left:.3rem ;
+				}
+            }
+            
+            .boxSearch{
+                margin-top: -.5rem;
+            }
 
+			
 		}
 	}
 }
- 

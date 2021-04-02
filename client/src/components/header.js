@@ -7,41 +7,31 @@ import logo from '../assets/sasmiyaLogo.png';
 
 export default function Header(props) {
 	return (
-		<div className='root'>
+		<div className='main'>
 			<AppBar className='appBar' position='static' elevation={0}>
 				<Toolbar className='toolB' style={{ height: '120px' }}>
 					{props.show === 1 && (
 						<>
+							{' '}
 							<NavLink to='/'>
 								<Typography
 									variant='h5'
+									className='title'
 									style={{
-										color: '#539B1E',
 										marginRight: '0.3rem',
 									}}>
 									{' '}
 									SasMiya{' '}
 								</Typography>
 							</NavLink>
-							<div className='logo'>
-								<NavLink to='/'>
-									<img
-										src={logo}
-										alt='logo'
-										style={{
-											height: '60px',
-											width: '60px',
-											float: 'left',
-											marginRight: '1rem',
-										}}
-									/>
-								</NavLink>
-								<div>
-									{props.show === 1 && (
-										<Search onSubmit={() => {}} />
-									)}
-								</div>
-							</div>{' '}
+							<NavLink to='/'>
+								<img src={logo} alt='logo' className='logo' />
+							</NavLink>
+							<div className='boxSearch'>
+								{props.show === 1 && (
+									<Search onSubmit={() => {}} />
+								)}
+							</div>
 						</>
 					)}
 				</Toolbar>

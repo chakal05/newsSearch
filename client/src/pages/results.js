@@ -7,7 +7,7 @@ import MyHeader from '../components/header';
 function Results(props) {
 	return (
 		<div className='root'>
-			<div style={{ marginBottom: '3rem' }}>
+			<div className='myHeader'>
 				<MyHeader show={1} />
 			</div>
 			<Grid container>
@@ -16,7 +16,7 @@ function Results(props) {
 						<LinearProgress className='progress'  />
 					)}
 				</Grid>
-				<Grid item className='list'>
+				<Grid item  className='list'>
 					<NewsList data={props.results} action={1} />
 				</Grid>
 			</Grid>

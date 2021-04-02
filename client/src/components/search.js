@@ -7,7 +7,6 @@ import '../styles/search.scss';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 function Search(props) {
-
 	const key = process.env.REACT_APP_NEWS_KEY;
 	const [query, setQuery] = useState('');
 	const options = {
@@ -15,7 +14,7 @@ function Search(props) {
 		url:
 			'https://contextualwebsearch-websearch-v1.p.rapidapi.com/api/search/NewsSearchAPI',
 		params: {
-			pageSize: '10',
+			pageSize: '17',
 			q: query,
 			autoCorrect: 'true',
 			pageNumber: '1',
@@ -41,32 +40,31 @@ function Search(props) {
 	};
 
 	return (
-		<form
-			className='root'
-			onSubmit={(e) => {
-				e.preventDefault();
-				getData();
-				props.onSubmit();
-			}}>
-			<TextField
-				placeholder={`Search ...`}
-				className='userInput'
-				variant='outlined'
-				onChange={(e) => {
-					setQuery(e.target.value.trim());
-                }}
-                InputProps={{
-                    endAdornment:(
-                        <InputAdornment position='end'>
-                        <FontAwesomeIcon icon={faSearch}/>
-                        </InputAdornment>
-                    )
-                }}
-                >
-              
-            </TextField>
-           
-		</form>
+		<div className='search'>
+			<form
+				onSubmit={(e) => {
+					e.preventDefault();
+					getData();
+					props.onSubmit();
+				}}>
+				<TextField
+					placeholder={`Search ...`}
+					className='userInput'
+					variant='outlined'
+					onChange={(e) => {
+						setQuery(e.target.value.trim());
+					}}
+					InputProps={{
+						endAdornment: (
+							<InputAdornment position='end'>
+								<FontAwesomeIcon
+									icon={faSearch}
+								/>
+							</InputAdornment>
+						),
+					}}></TextField>
+			</form>
+		</div>
 	);
 }
 
