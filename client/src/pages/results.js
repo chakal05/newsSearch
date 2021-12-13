@@ -20,7 +20,7 @@ function Results(props) {
 					<NewsList data={props.results} action={1} />
 				</Grid>
 			</Grid>
-		</div>
+		</div> 
 	);
 }
 

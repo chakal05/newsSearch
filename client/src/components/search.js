@@ -31,8 +31,10 @@ function Search(props) {
 	const getData = async () => {
 		await axios
 			.request(options)
-			.then((response) => {
-				props.dispatch(searchResult(response.data.value));
+			.then((response, next) => {
+				if (response.status === 200) {
+					props.dispatch(searchResult(response.data.value));
+				}
 			})
 			.catch((err) => {
 				throw err;
@@ -48,18 +50,17 @@ function Search(props) {
 					props.onSubmit();
 				}}>
 				<TextField
-					placeholder={`Search ...`}
+					placeholder={`Search news keyword e.g Bitcoin`}
 					className='userInput'
 					variant='outlined'
+                    focus=''
 					onChange={(e) => {
 						setQuery(e.target.value.trim());
 					}}
 					InputProps={{
 						endAdornment: (
 							<InputAdornment position='end'>
-								<FontAwesomeIcon
-									icon={faSearch}
-								/>
+								<FontAwesomeIcon icon={faSearch} />
 							</InputAdornment>
 						),
 					}}></TextField>

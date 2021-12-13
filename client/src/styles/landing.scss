@@ -1,29 +1,26 @@
 .landing {
-//	height: 93.3vh;
-	padding: 70px 0;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	width: 90%;
+	height: 50%;
 
 	.container {
-       
 		.box {
-            
-			.logo{ 
-                margin-top: 9rem;
+			.logo {
+				.topTxt {
+					color: #336b0b;
+					font-size: 3rem;
+					margin: 1rem;
+				}
 
-                @media screen and (max-width: 600px) {
-                    margin-top: 3rem;
-                }
-                .topTxt {
-                 color:#539B1E ;
-                    font-size: 3rem;
-                    margin-top: .5rem;
-                    margin-bottom: 2rem;
-                }
-
-                .imag{
-                    height: 150px;
-                    width: 150px;
-                }
-            }
+				.imag {
+					height: 100px;
+					width: 100px;
+				}
+			}
 		}
 	}
 }
